@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_config_301",
+    "question": "What is the default value of notes.rewriteMode?",
+    "answer": "concatenate"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_301",
+    "question": "Which environment variable can override the notes rewrite mode?",
+    "answer": "GIT_NOTES_REWRITE_MODE"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_301",
+    "question": "What does notes.rewriteRef specify when copying notes during a rewrite?",
+    "answer": "the (fully qualified) ref whose notes should be copied"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_325",
+    "question": "How does Git generate a safe remote name when no prefix is provided?",
+    "answer": "sanitizing the URL and prefixing it with promisor-auto-"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_325",
+    "question": "What does Git append when a chosen remote name already exists for a different URL?",
+    "answer": "a numeric suffix"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_325",
+    "question": "Which configuration variable is used for tracing and debugging the server-advertised remote name?",
+    "answer": "<name> .advertisedAs"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_8",
+    "question": "Which command lists all available Git configuration variables?",
+    "answer": "git help --config"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_8",
+    "question": "What does the get command emit when a configuration key appears multiple times?",
+    "answer": "the last value"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_8",
+    "question": "What error code does get return if the requested key is absent?",
+    "answer": "1"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_switch_15",
+    "question": "What is the default minimum number of files required to attempt parallel checkout?",
+    "answer": "100"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_switch_15",
+    "question": "Why can sequential checkout perform better on spinning disks?",
+    "answer": "the default sequential checkout often performs better"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_switch_15",
+    "question": "Which repositories usually benefit from parallel checkout?",
+    "answer": "repositories located on SSDs or over NFS"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_7",
+    "question": "What does git diff with a named commit show?",
+    "answer": "the changes you have in your working tree relative to the named <commit>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_7",
+    "question": "Which option uses the merge base of a commit and HEAD for comparison?",
+    "answer": "--merge-base"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_7",
+    "question": "What can be compared using the two-commit form of git diff?",
+    "answer": "two arbitrary <commit>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_2",
+    "question": "What is the purpose of the git-commit command?",
+    "answer": "Record changes to the repository"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_2",
+    "question": "Which option allows a commit to be amended?",
+    "answer": "--amend"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_2",
+    "question": "Which option specifies a commit message directly on the command line?",
+    "answer": "-m <msg>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_pull_44",
+    "question": "Where can a named file be provided to specify a repository URL?",
+    "answer": "$GIT_DIR/branches"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_pull_44",
+    "question": "What is the default value of <head> when it is omitted?",
+    "answer": "master"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_pull_44",
+    "question": "Which refspec does git push use when a branch file is configured?",
+    "answer": "HEAD:refs/heads/ <head>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_44",
+    "question": "What happens when the source of a push is a tree or blob object?",
+    "answer": "any updates will be rejected"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_44",
+    "question": "Which options can override the standard push update rules?",
+    "answer": "--force"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_44",
+    "question": "What type of update is allowed when the source is a tag or commit object?",
+    "answer": "any fast-forward update"
+  }
+]

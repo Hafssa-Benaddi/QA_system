@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_config_137",
+    "question": "What is the default location of the file containing Git attributes?",
+    "answer": "$XDG_CONFIG_HOME/git/attributes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_137",
+    "question": "Which fallback path is used when XDG_CONFIG_HOME is unset or empty?",
+    "answer": "$HOME/.config/git/attributes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_137",
+    "question": "How can users change the directory where Git looks for hooks?",
+    "answer": "core.hooksPath"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_63",
+    "question": "Which characters are allowed in an alias name defined without a subsection?",
+    "answer": "ASCII alphanumeric characters and -"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_63",
+    "question": "How is an alias name matched when it is defined without a subsection?",
+    "answer": "case-insensitively"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_63",
+    "question": "What Git command is equivalent to the alias definition git config --global alias.last \"cat-file commit HEAD\"?",
+    "answer": "git last"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_128",
+    "question": "How are file modes represented in extended headers?",
+    "answer": "6-digit octal numbers"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_128",
+    "question": "What does the similarity index measure?",
+    "answer": "the percentage of unchanged lines"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_128",
+    "question": "Which filenames are shown as file1 and file2 when a rename or copy occurs?",
+    "answer": "the name of the source file"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_6",
+    "question": "What happens if evaluating a filter command returns a non-zero exit status?",
+    "answer": "the whole operation will be aborted"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_6",
+    "question": "Which option runs a one-time setup before the commit-processing loop?",
+    "answer": "--setup <command>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_6",
+    "question": "What does the map function output if a commit has already been rewritten?",
+    "answer": "a \"rewritten sha1 id\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_274",
+    "question": "What does the scissors feature remove from a message body when active?",
+    "answer": "everything from the message body before a scissors line"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_274",
+    "question": "Which source takes precedence when both mailmap.file and mailmap.blob are configured?",
+    "answer": "mailmap.file"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_274",
+    "question": "What is the default value of mailmap.blob in a bare repository?",
+    "answer": "HEAD:.mailmap"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_46",
+    "question": "Why are textconv filters not enabled by default for git-format-patch?",
+    "answer": "the resulting diff is suitable for human consumption, but cannot be applied"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_46",
+    "question": "Which setting is the default for ignoring submodule changes during diff generation?",
+    "answer": "all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_46",
+    "question": "What does the untracked setting do when checking submodules?",
+    "answer": "submodules are not considered dirty when they only contain untracked content"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reset_14",
+    "question": "Where does Git store the original tip of the current branch after a pull or merge?",
+    "answer": "ORIG_HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reset_14",
+    "question": "Which command undoes a merge or pull while preserving the possibility of local modifications?",
+    "answer": "git reset --merge ORIG_HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reset_14",
+    "question": "What does resetting hard to ORIG_HEAD restore?",
+    "answer": "your index file and the working tree back to that state"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_69",
+    "question": "How can a specific merge strategy be applied to a merge during an interactive rebase?",
+    "answer": "an exec command to call git merge explicitly with a --strategy argument"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_69",
+    "question": "Which worktree-local reference corresponds to the label onto?",
+    "answer": "refs/rewritten/onto"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_69",
+    "question": "What happens when a merge command of the form merge <merge-head> is added?",
+    "answer": "always open an editor"
+  }
+]

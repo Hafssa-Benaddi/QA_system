@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_4",
+    "question": "Which option lets users review and edit each patch before sending it?",
+    "answer": "--annotate"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_4",
+    "question": "How can a sender specify a Bcc value for each email?",
+    "answer": "--bcc= <address> ,..."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_4",
+    "question": "What does the --compose option allow users to edit?",
+    "answer": "an introductory message for the patch series"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_253",
+    "question": "What is the default buffer size for smart HTTP transports when POSTing data?",
+    "answer": "1 MiB"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_253",
+    "question": "When is an HTTP transfer aborted according to the low-speed settings?",
+    "answer": "less than http.lowSpeedLimit for longer than http.lowSpeedTime seconds"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_253",
+    "question": "Which environment variable can override the configured HTTP low-speed limit?",
+    "answer": "GIT_HTTP_LOW_SPEED_LIMIT"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_68",
+    "question": "When do most fast-import commands have a visible effect?",
+    "answer": "until the next checkpoint (or completion)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_68",
+    "question": "How can a frontend and fast-import communicate bidirectionally?",
+    "answer": "connecting the frontend and fast-import via bidirectional pipes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_68",
+    "question": "Which commands can a frontend use to read information during an import?",
+    "answer": "progress , get-mark , ls , and cat-blob"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_370",
+    "question": "What is the default value of rerere.autoUpdate?",
+    "answer": "false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_370",
+    "question": "How does rerere.enabled help resolve conflicts automatically?",
+    "answer": "identical conflict hunks can be resolved automatically"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_370",
+    "question": "Which value makes git revert behave as if the --reference option is given?",
+    "answer": "true"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_20",
+    "question": "Which command replaces the older --get-all configuration option?",
+    "answer": "git config get [ --value= <pattern> ] --all <name>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_20",
+    "question": "How can a configuration section be renamed using the replacement command?",
+    "answer": "git config rename-section <old-name> <new-name>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_20",
+    "question": "When is pager.config respected?",
+    "answer": "only when listing configuration"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_27",
+    "question": "Which file is used to illustrate the differences between simplification settings?",
+    "answer": "foo"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_27",
+    "question": "What contents does foo have in the initial commit I?",
+    "answer": "asdf"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_27",
+    "question": "Why is merge M considered TREESAME to all parents?",
+    "answer": "Its merge M is trivial"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_pull_8",
+    "question": "Which environment variable can prevent the merge editor from opening in older scripts?",
+    "answer": "GIT_MERGE_AUTOEDIT"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_pull_8",
+    "question": "What does the --cleanup option determine?",
+    "answer": "how the merge message will be cleaned up before committing"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_pull_8",
+    "question": "When does --ff-only update to the new history?",
+    "answer": "if there is no divergent local history"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_9",
+    "question": "What does the -u option update in the index?",
+    "answer": "where it already has an entry matching <pathspec>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_9",
+    "question": "Which option adds, modifies, and removes index entries to match the working tree?",
+    "answer": "--all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_9",
+    "question": "Why might editing a patch manually cause problems?",
+    "answer": "create a patch that does not apply to the index"
+  }
+]

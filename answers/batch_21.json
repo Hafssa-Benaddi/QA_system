@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_status_20",
+    "question": "Which character distinguishes unmerged entries from ordinary changed entries?",
+    "answer": "u"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_status_20",
+    "question": "What does the <mW> field represent?",
+    "answer": "The octal file mode in the worktree."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_status_20",
+    "question": "How are untracked items represented?",
+    "answer": "? <path>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_13",
+    "question": "Which option applies the partial clone filter to submodules?",
+    "answer": "--also-filter-submodules"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_13",
+    "question": "Which options are required for --also-filter-submodules?",
+    "answer": "--filter and --recurse-submodules"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_13",
+    "question": "What does the --mirror option set up?",
+    "answer": "a mirror of the source repository"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_425",
+    "question": "How often does upload-pack send an empty keepalive packet by default?",
+    "answer": "5 seconds"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_425",
+    "question": "What happens when the keepalive setting is set to 0?",
+    "answer": "disables keepalive packets entirely"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_425",
+    "question": "When is uploadpack.packObjectsHook respected?",
+    "answer": "when it is specified in protected configuration"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_404",
+    "question": "What is the default value of trace2.eventNesting?",
+    "answer": "2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_404",
+    "question": "Which environment variable can override trace2.eventBrief?",
+    "answer": "GIT_TRACE2_EVENT_BRIEF"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_404",
+    "question": "How are important configuration settings specified for trace2.configParams?",
+    "answer": "A comma-separated list of patterns"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_9",
+    "question": "Which environment variable can specify the template directory for git init?",
+    "answer": "$GIT_TEMPLATE_DIR"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_9",
+    "question": "How can a sample hook be enabled?",
+    "answer": "rename it by removing its .sample suffix"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_9",
+    "question": "Which command adds all existing files to the index?",
+    "answer": "$ git add ."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_shortlog_5",
+    "question": "Which command shows who reviewed commits using Reviewed-by trailers?",
+    "answer": "git shortlog -ns --group=trailer:reviewed-by"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_shortlog_5",
+    "question": "What happens to commits that do not include the specified trailer?",
+    "answer": "will not be counted"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_shortlog_5",
+    "question": "When may a commit with multiple trailers be counted more than once?",
+    "answer": "multiple trailers (e.g., multiple signoffs)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_75",
+    "question": "Which command resets a dummy branch to the base commit for a tag?",
+    "answer": "reset"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_75",
+    "question": "What is the example name for the tag fixup branch?",
+    "answer": "TAG_FIXUP"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_75",
+    "question": "Why should merge be used when committing fixups?",
+    "answer": "allow tools such as git blame to track through the real commit history"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_39",
+    "question": "Which option makes Git walk every edge in the history graph?",
+    "answer": "--full-history"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_39",
+    "question": "Which commits does --full-history discover in addition to A and B?",
+    "answer": "the merge M"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_39",
+    "question": "Why do merge commits O and P contribute extra noise?",
+    "answer": "they did not actually contribute a change to file.txt"
+  }
+]

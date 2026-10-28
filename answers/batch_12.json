@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_78",
+    "question": "Which placeholder displays the full commit hash?",
+    "answer": "%H"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_78",
+    "question": "What does %h display for a commit?",
+    "answer": "abbreviated commit hash"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_78",
+    "question": "Which placeholder centers text by padding both sides?",
+    "answer": "%><( <n> )"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_14",
+    "question": "Which command skips the current commit during a bisect session?",
+    "answer": "git bisect skip"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_14",
+    "question": "Which command skips all commits in the range from v2.5 through v2.6?",
+    "answer": "git bisect skip v2.5..v2.6"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_14",
+    "question": "Why can skipping a commit adjacent to the target commit make the result uncertain?",
+    "answer": "Git will be unable to tell exactly which of those commits was the first bad one"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_51",
+    "question": "Which option outputs the selected commits in reverse order?",
+    "answer": "--reverse"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_51",
+    "question": "How does --no-walk affect commit history traversal?",
+    "answer": "do not traverse their ancestors"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_51",
+    "question": "Which option cannot be combined with --reverse?",
+    "answer": "--walk-reflogs"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_26",
+    "question": "Which option treats all files as text?",
+    "answer": "-a --text"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_26",
+    "question": "What does --ignore-blank-lines ignore?",
+    "answer": "changes whose lines are all blank"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_26",
+    "question": "Which option specifies a regular expression for ignoring matching lines?",
+    "answer": "-I <regex> --ignore-matching-lines= <regex>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_126",
+    "question": "Which option limits the maximum depth to zero?",
+    "answer": "--max-depth=0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_126",
+    "question": "When is depth measured as if all top-level entries were specified?",
+    "answer": "If no pathspec is given"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_126",
+    "question": "What types of comparisons support the --max-depth option?",
+    "answer": "diffs between tree objects"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_14",
+    "question": "What is the default expiration period for reflog entries?",
+    "answer": "90 days"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_14",
+    "question": "Which value disables the grace period for worktree pruning?",
+    "answer": "now"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_14",
+    "question": "What is the default expiration period for unreachable reflog entries?",
+    "answer": "30 days"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_11",
+    "question": "What is the default maximum number of simultaneously active branches?",
+    "answer": "5"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_11",
+    "question": "What is the default maximum blob size for delta creation?",
+    "answer": "512m (512 MiB)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_11",
+    "question": "Which option sets the maximum delta depth for blobs and trees?",
+    "answer": "--depth=<n>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_57",
+    "question": "What restriction applies to the delimiter string in delimited data?",
+    "answer": "must not appear on a line by itself within <raw>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_57",
+    "question": "When is the LF after the delimiter optional?",
+    "answer": "The LF after <delim> LF is optional"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_57",
+    "question": "What does the checkpoint command force fast-import to do?",
+    "answer": "close the current packfile, start a new one"
+  }
+]

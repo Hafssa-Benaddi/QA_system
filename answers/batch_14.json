@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_27",
+    "question": "What does the commit command record when creating or updating a branch?",
+    "answer": "one logical change to the project"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_27",
+    "question": "Which prefix is typically used for branch names in Git?",
+    "answer": "refs/heads/"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_27",
+    "question": "What requirement must the value of <ref> satisfy?",
+    "answer": "a valid refname in Git"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_209",
+    "question": "What is the default value of gc.packRefs?",
+    "answer": "true"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_209",
+    "question": "Where are unreachable objects stored when gc.cruftPacks is enabled?",
+    "answer": "in a cruft pack"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_209",
+    "question": "Which takes priority when both gc.maxCruftSize and --max-cruft-size are specified?",
+    "answer": "the command line option"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_49",
+    "question": "Which option displays only the big picture of history topology by omitting commits not referenced by tags?",
+    "answer": "--simplify-by-decoration"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_49",
+    "question": "Why does commit N remain in the history after simplification?",
+    "answer": "because it \"pulled\" the change R into the main branch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_49",
+    "question": "How are commits marked !TREESAME during history simplification?",
+    "answer": "they are referenced by tags"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_7",
+    "question": "Which option shows commits more recent than a specified date while visiting all commits in the range?",
+    "answer": "--since-as-filter= <date>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_7",
+    "question": "Which options show commits older than a specified date?",
+    "answer": "--until= <date> --before= <date>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_7",
+    "question": "When is using --grep-reflog an error?",
+    "answer": "unless --walk-reflogs is in use"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_39",
+    "question": "Which option adds a To: header to email headers?",
+    "answer": "--to= <email>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_39",
+    "question": "What does the --no-to option discard?",
+    "answer": "all To: headers added so far"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_39",
+    "question": "What is the default subject prefix for patch emails?",
+    "answer": "PATCH"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_33",
+    "question": "Which values are permitted for sendemail.confirm?",
+    "answer": "always , never , cc , compose , or auto"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_33",
+    "question": "What is the default setting for sendemail.mailmap?",
+    "answer": "False by default"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_33",
+    "question": "Which mailmap file takes precedence over the default mailmap locations?",
+    "answer": "sendemail.mailmap.file"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_22",
+    "question": "How can all new changes be prevented from being staged when editing a patch?",
+    "answer": "delete all lines of the patch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_22",
+    "question": "How can staging the removal of content be prevented?",
+    "answer": "converting the \"-\" to a \" \" (space)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_22",
+    "question": "What represents added content in a patch?",
+    "answer": "lines beginning with \"+\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_21",
+    "question": "Which option warns when changes introduce conflict markers or whitespace errors?",
+    "answer": "--check"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_21",
+    "question": "Which configuration controls what Git considers whitespace errors?",
+    "answer": "core.whitespace"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_21",
+    "question": "Which option highlights whitespace errors in context, old, or new diff lines?",
+    "answer": "--ws-error-highlight= <kind>"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_config_322",
+    "question": "Which protocol schemes are recommended for secure URL patterns?",
+    "answer": "https:// or ssh://"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_322",
+    "question": "Why can an overly broad URL pattern create a security risk?",
+    "answer": "a matching URL allows a server to auto-configure new remotes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_322",
+    "question": "Which shared hosting platforms require special caution when defining trusted URL patterns?",
+    "answer": "github.com or gitlab.com"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_imap_send_12",
+    "question": "What should users verify before sending an email message containing patches?",
+    "answer": "meets the standards of your project"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_imap_send_12",
+    "question": "Which email client is specifically known to be problematic when sending patches?",
+    "answer": "Thunderbird"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_imap_send_12",
+    "question": "Where can Thunderbird users find more information about plain-text email?",
+    "answer": "https://kb.mozillazine.org/Plain_text_e-mail_-_Thunderbird#Completely_plain_email"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_13",
+    "question": "Which option pushes all refs under refs/tags in addition to explicitly listed refspecs?",
+    "answer": "--tags"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_13",
+    "question": "How can Git push annotated tags that are missing from the remote but reachable from pushed refs?",
+    "answer": "--follow-tags"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_13",
+    "question": "What happens when signed pushes are required but the server does not support them?",
+    "answer": "the push will fail"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_27",
+    "question": "Which option walks reflog entries instead of the commit ancestry chain?",
+    "answer": "--walk-reflogs"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_27",
+    "question": "In which direction does Git walk reflog entries when --walk-reflogs is used?",
+    "answer": "from the most recent one to older ones"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_27",
+    "question": "How can a reflog designator display the reverse-chronological index of an entry?",
+    "answer": "ref@{ <Nth> }"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_0",
+    "question": "Which command checks whether files are ignored by Git?",
+    "answer": "check-ignore"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_0",
+    "question": "Which Git topic includes commands such as add, status, diff, and commit?",
+    "answer": "Basic Snapshotting"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_0",
+    "question": "Which command is listed under the Email section for sending patches?",
+    "answer": "send-email"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cherry_pick_12",
+    "question": "How can changes from commits be applied without creating new commits?",
+    "answer": "git cherry-pick -n master~1 next"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cherry_pick_12",
+    "question": "Which command applies changes from the fifth and third last commits pointed to by master?",
+    "answer": "git cherry-pick master~4 master~2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cherry_pick_12",
+    "question": "When can git cherry-pick --ff advance HEAD to next?",
+    "answer": "If history is linear and HEAD is an ancestor of next"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cherry_pick_9",
+    "question": "Which option allows cherry-picking commits that have empty messages?",
+    "answer": "--allow-empty-message"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cherry_pick_9",
+    "question": "What is the default behavior when a cherry-picked commit becomes redundant with existing changes?",
+    "answer": "stop"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cherry_pick_9",
+    "question": "Which option keeps a redundant cherry-picked commit?",
+    "answer": "--empty=keep"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_75",
+    "question": "Which environment variable can override the diff.external configuration?",
+    "answer": "GIT_EXTERNAL_DIFF"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_75",
+    "question": "What does diff.external specify when it is configured?",
+    "answer": "the given command"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_75",
+    "question": "What exit code should an external diff command return when the files are equal if diff.trustExitCode is true?",
+    "answer": "0"
+  }
+]

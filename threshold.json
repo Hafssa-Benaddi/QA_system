@@ -1,0 +1,120 @@
+{
+  "min_score": 0.01,
+  "method": "bm25",
+  "k": 5,
+  "regle": "plus petit seuil avec <= 10% de questions hors sujet repondues",
+  "table": [
+    {
+      "seuil": 0,
+      "couverture": 1.0,
+      "EM_repondues": 0.48,
+      "F1_repondues": 0.6219517267658952,
+      "EM_globale": 0.48,
+      "hors_sujet_repondues": 1.0
+    },
+    {
+      "seuil": 0.01,
+      "couverture": 0.92,
+      "EM_repondues": 0.5163043478260869,
+      "F1_repondues": 0.6600501860981952,
+      "EM_globale": 0.475,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.02,
+      "couverture": 0.905,
+      "EM_repondues": 0.5193370165745856,
+      "F1_repondues": 0.6649128963650162,
+      "EM_globale": 0.47,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.05,
+      "couverture": 0.835,
+      "EM_repondues": 0.5389221556886228,
+      "F1_repondues": 0.6861516735339112,
+      "EM_globale": 0.45,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.1,
+      "couverture": 0.76,
+      "EM_repondues": 0.5526315789473685,
+      "F1_repondues": 0.6950107273383682,
+      "EM_globale": 0.42,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.15,
+      "couverture": 0.705,
+      "EM_repondues": 0.5602836879432624,
+      "F1_repondues": 0.6980009095835781,
+      "EM_globale": 0.395,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.2,
+      "couverture": 0.65,
+      "EM_repondues": 0.5846153846153846,
+      "F1_repondues": 0.7166473845947404,
+      "EM_globale": 0.38,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.3,
+      "couverture": 0.51,
+      "EM_repondues": 0.6274509803921569,
+      "F1_repondues": 0.7490902024736611,
+      "EM_globale": 0.32,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.4,
+      "couverture": 0.4,
+      "EM_repondues": 0.6875,
+      "F1_repondues": 0.7994916779127306,
+      "EM_globale": 0.275,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.5,
+      "couverture": 0.275,
+      "EM_repondues": 0.7090909090909091,
+      "F1_repondues": 0.7907226107226107,
+      "EM_globale": 0.195,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.6,
+      "couverture": 0.2,
+      "EM_repondues": 0.7,
+      "F1_repondues": 0.7955769230769231,
+      "EM_globale": 0.14,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.7,
+      "couverture": 0.12,
+      "EM_repondues": 0.7083333333333334,
+      "F1_repondues": 0.8083333333333332,
+      "EM_globale": 0.085,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.8,
+      "couverture": 0.06,
+      "EM_repondues": 0.75,
+      "F1_repondues": 0.7833333333333333,
+      "EM_globale": 0.045,
+      "hors_sujet_repondues": 0.0
+    },
+    {
+      "seuil": 0.9,
+      "couverture": 0.02,
+      "EM_repondues": 1.0,
+      "F1_repondues": 1.0,
+      "EM_globale": 0.02,
+      "hors_sujet_repondues": 0.0
+    }
+  ]
+}

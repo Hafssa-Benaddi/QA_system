@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_1",
+    "question": "Which plumbing command is listed for displaying references with custom formatting?",
+    "answer": "for-each-ref"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_1",
+    "question": "When was Git version 2.52.0 released?",
+    "answer": "2025-11-17"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_1",
+    "question": "Which version was listed as the latest updated version of git-for-each-ref?",
+    "answer": "2.56.0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_71",
+    "question": "Which configuration option specifies the default backend for rebasing?",
+    "answer": "rebase.backend"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_71",
+    "question": "What are the possible choices for the default rebase backend?",
+    "answer": "apply or merge"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_71",
+    "question": "Which topic branch adds support for TLS v1.3?",
+    "answer": "http: add support for TLS v1.3"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_status_24",
+    "question": "Which option prevents git status from reporting untracked files?",
+    "answer": "--untracked-files=no"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_status_24",
+    "question": "What is the fastest option for avoiding the reporting of untracked files?",
+    "answer": "This is the fastest option."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_status_24",
+    "question": "Why should users manually add new files when untracked-file reporting is disabled?",
+    "answer": "git status will not list the untracked files"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_12",
+    "question": "What does the push atom display for a reference?",
+    "answer": "The name of a local ref which represents the @{push} location"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_12",
+    "question": "What does the push atom produce when no push reference is configured?",
+    "answer": "an empty string"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_12",
+    "question": "Which atom changes the output color?",
+    "answer": "color"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_4",
+    "question": "Why might someone use git check-ignore when debugging ignored paths?",
+    "answer": "to debug why a path became tracked"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_4",
+    "question": "How is output displayed by default when a pathname matches an ignore pattern?",
+    "answer": "one per line"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_4",
+    "question": "Which information does the verbose output provide about an ignore pattern?",
+    "answer": "<source> <COLON> <linenum> <COLON> <pattern> <HT> <pathname>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_21",
+    "question": "Which ref storage format is the default when cloning a repository?",
+    "answer": "files"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_21",
+    "question": "How many submodules can be fetched at the same time according to the jobs option?",
+    "answer": "<n>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_21",
+    "question": "When is cloning into an existing directory allowed?",
+    "answer": "only if the directory is empty"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_4",
+    "question": "Which option suppresses all output from the diff machinery?",
+    "answer": "-s --no-patch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_4",
+    "question": "How can the number of context lines in a diff be specified?",
+    "answer": "-U <n>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_4",
+    "question": "Which option outputs the diff to a specific file instead of stdout?",
+    "answer": "--output= <file>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_133",
+    "question": "What does /dev/null indicate in a traditional unified diff header?",
+    "answer": "created or deleted files"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_133",
+    "question": "Which option produces an extended from-file/to-file header in combined diff output?",
+    "answer": "--combined-all-paths"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_133",
+    "question": "Why was the combined diff format created?",
+    "answer": "for review of merge commit changes"
+  }
+]

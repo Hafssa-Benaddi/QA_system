@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_21",
+    "question": "Which command automatically bisects a test failure between origin and HEAD?",
+    "answer": "git bisect run make test"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_21",
+    "question": "What command ends a Git bisect session?",
+    "answer": "git bisect reset"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_21",
+    "question": "How does the custom test script skip broken builds?",
+    "answer": "make || exit 125"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_34",
+    "question": "How can the number of context lines in a generated diff be specified?",
+    "answer": "-U <n>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_34",
+    "question": "Which option writes output to a specific file instead of stdout?",
+    "answer": "--output= <file>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_34",
+    "question": "What are the default characters used to indicate new, old, and context lines?",
+    "answer": "+ , - and ' '"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_70",
+    "question": "Which command shows only modification, rename, and copy changes?",
+    "answer": "git diff --diff-filter=MRC"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_70",
+    "question": "How can Git diff output be displayed in reverse?",
+    "answer": "git diff -R"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_70",
+    "question": "Which option spends extra cycles to find renames, copies, and complete rewrites?",
+    "answer": "--find-copies-harder -B -C"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_355",
+    "question": "How frequently does the reftable backend create restart points by default?",
+    "answer": "every 16 records"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_355",
+    "question": "What is the maximum number of restart points supported per block?",
+    "answer": "65535 restart points per block"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_355",
+    "question": "What happens when restart points are less frequent?",
+    "answer": "makes prefix compression more effective"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_daemon_2",
+    "question": "On which port does the Git daemon normally listen?",
+    "answer": "9418"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_daemon_2",
+    "question": "Which file must a directory contain to be exported by the Git daemon?",
+    "answer": "git-daemon-export-ok"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_daemon_2",
+    "question": "What type of daemon is described in the documentation?",
+    "answer": "A really simple TCP Git daemon"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_restore_2",
+    "question": "Which command restores specified paths in the working tree?",
+    "answer": "git restore"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_restore_2",
+    "question": "From which location are contents restored by default when --staged is given?",
+    "answer": "HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_restore_2",
+    "question": "Which option restores both the working tree and the index?",
+    "answer": "--staged --worktree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_branch_13",
+    "question": "Which option lists both remote-tracking branches and local branches?",
+    "answer": "-a --all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_branch_13",
+    "question": "What does the --show-current option print?",
+    "answer": "the name of the current branch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_branch_13",
+    "question": "When does --show-current print nothing?",
+    "answer": "In detached HEAD state"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_362",
+    "question": "Which option can fetch associated objects for commits already present in the local object database?",
+    "answer": "--refetch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_362",
+    "question": "What does remote.<name>.partialclonefilter specify?",
+    "answer": "The filter that will be applied when fetching from this promisor remote"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_362",
+    "question": "How can server options be overridden when fetching from a remote?",
+    "answer": "--server-option="
+  }
+]

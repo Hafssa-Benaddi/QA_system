@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_gc_4",
+    "question": "What does the --auto option do when no housekeeping is required?",
+    "answer": "it exits without performing any work"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_4",
+    "question": "How does the aggressive optimization option affect the time required by git gc?",
+    "answer": "taking much more time"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_4",
+    "question": "Where are unreachable objects stored when the --cruft option is enabled?",
+    "answer": "into a cruft pack"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_40",
+    "question": "How can Git links be specified when importing submodules?",
+    "answer": "either by SHA or through a commit mark"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_40",
+    "question": "What does the mode 040000 represent in a Git import?",
+    "answer": "A subdirectory."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_40",
+    "question": "When must a file path be quoted instead of represented as an unquoted string?",
+    "answer": "if the filename contains LF or starts with double quote"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_18",
+    "question": "Which command displays the path and currently checked-out commit for each submodule?",
+    "answer": "git submodule foreach 'echo $sm_path `git rev-parse HEAD`'"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_18",
+    "question": "What happens when a command returns a non-zero status in any submodule?",
+    "answer": "the processing to terminate"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_18",
+    "question": "Why is git submodule sync useful when upstream submodule URLs change?",
+    "answer": "you need to update your local repositories accordingly"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_10",
+    "question": "Which option suppresses patch output?",
+    "answer": "--no-patch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_10",
+    "question": "What does a numeric start or end value specify in a line range?",
+    "answer": "an absolute line number"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_10",
+    "question": "Which regular expression syntax is used when a line range is specified as /<regex>/?",
+    "answer": "POSIX <regex>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_10",
+    "question": "Which command creates the .git directory when initializing a codebase?",
+    "answer": "git init"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_10",
+    "question": "What does the git add . command do during initial repository setup?",
+    "answer": "Add all existing files to the index."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_10",
+    "question": "Which configuration setting allows the default branch name to be overridden?",
+    "answer": "init.defaultBranch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_82",
+    "question": "What data structure is used for the object table in fast-import?",
+    "answer": "a hashtable"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_82",
+    "question": "How are marks stored in fast-import?",
+    "answer": "in a sparse array"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_82",
+    "question": "Which mark range are frontends strongly encouraged to use?",
+    "answer": "between 1 and n"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_8",
+    "question": "What does the --all-match option require of commit log messages?",
+    "answer": "match all given --grep"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_8",
+    "question": "Which option matches regular-expression limiting patterns without regard to letter case?",
+    "answer": "--regexp-ignore-case"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_8",
+    "question": "Which regular-expression type is used by default for limiting patterns?",
+    "answer": "basic regular expressions"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_0",
+    "question": "Which Git topic covers sending email-based patches?",
+    "answer": "send-email"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_0",
+    "question": "Which command is listed under the Email topic for applying patches?",
+    "answer": "am"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_0",
+    "question": "Which section contains commands such as daemon, gc, and fsck?",
+    "answer": "Server Admin"
+  }
+]

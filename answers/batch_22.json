@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_44",
+    "question": "How can reviewers see differences between the previous and current patch series in the cover letter?",
+    "answer": "insert an interdiff into the cover letter"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_44",
+    "question": "Which option inserts a range-diff to help reviewers compare patch series?",
+    "answer": "--range-diff="
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_44",
+    "question": "What must the previous revision share with the series being formatted?",
+    "answer": "a common base"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_64",
+    "question": "How can the number of graph lanes displayed by Git log be limited?",
+    "answer": "--graph-lane-limit="
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_64",
+    "question": "What symbol replaces graph lanes that exceed the specified limit?",
+    "answer": "~"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_64",
+    "question": "How can users disable indentation of visual roots in a graph?",
+    "answer": "--no-graph-indent"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_98",
+    "question": "Which option displays only the names of changed files in the post-image tree?",
+    "answer": "--name-only"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_98",
+    "question": "How are pathnames with unusual characters quoted by default?",
+    "answer": "as explained for the configuration variable core.quotePath"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_98",
+    "question": "What does the short submodule format display?",
+    "answer": "the names of the commits at the beginning and end of the range"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_213",
+    "question": "What must the output contain for the object ID listing?",
+    "answer": "exactly one hex object ID per line, and nothing else"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_213",
+    "question": "What happens if multiple hooks do not all exit successfully?",
+    "answer": "the operation (either generating a cruft pack or unpacking unreachable objects) will be halted"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_213",
+    "question": "Which configuration setting specifies a separate packfile location for filtered objects?",
+    "answer": "gc.repackFilterTo"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cat_file_12",
+    "question": "Which option makes git cat-file follow symlinks when requesting objects in batch mode?",
+    "answer": "--follow-symlinks"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cat_file_12",
+    "question": "What does git cat-file provide instead of output about a symlink itself?",
+    "answer": "output about the linked-to object"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cat_file_12",
+    "question": "When does the --follow-symlinks option not work correctly?",
+    "answer": "when an object in the index is specified"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_264",
+    "question": "What is the default value of the Thunderbird patch email option?",
+    "answer": "false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_264",
+    "question": "Which authentication methods are supported when Git is built with NO_CURL or curl is too old?",
+    "answer": "PLAIN , CRAM-MD5 , OAUTHBEARER and XOAUTH2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_264",
+    "question": "What does index.recordEndOfIndexEntries specify?",
+    "answer": "whether the index file should include an \"End Of Index Entry\" section"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_13",
+    "question": "Which command creates a bundle containing the master branch of repository R1?",
+    "answer": "git bundle create file.bundle master"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_13",
+    "question": "How can a user clone a repository from a bundle file?",
+    "answer": "git clone backup.bundle <new directory>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_13",
+    "question": "Which tag records the last processed commit for incremental bundles?",
+    "answer": "lastR2bundle"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_61",
+    "question": "Which option displays the full 40-byte hexadecimal commit object name?",
+    "answer": "--no-abbrev-commit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_61",
+    "question": "What shorthand combines --pretty=oneline and --abbrev-commit?",
+    "answer": "--oneline"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_61",
+    "question": "What encoding does the option default to for non-plumbing commands?",
+    "answer": "UTF-8"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_14",
+    "question": "Which atom specifies the text printed when a conditional expression evaluates as true?",
+    "answer": "% ( then )"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_14",
+    "question": "How can a conditional expression compare a value with a specified string?",
+    "answer": ":equals= <string>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_14",
+    "question": "Which atom can be used to print either an asterisk or a space for HEAD?",
+    "answer": "% ( HEAD )"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_403",
+    "question": "Where are trace messages written when the value 1 or true is specified?",
+    "answer": "STDERR"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_403",
+    "question": "Which environment variable can override the trace2.normalBrief setting?",
+    "answer": "GIT_TRACE2_BRIEF"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_403",
+    "question": "What happens when trace2.perfBrief is true?",
+    "answer": "time , filename , and line fields are omitted from PERF output"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_23",
+    "question": "Which command removes the original references backed up by git-filter-branch?",
+    "answer": "git update-ref -d"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_23",
+    "question": "How can all reflogs be expired immediately?",
+    "answer": "git reflog expire --expire=now --all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_23",
+    "question": "Why is git-filter-branch described as glacially slow?",
+    "answer": "its design makes it impossible for a backward-compatible implementation to ever be fast"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_7",
+    "question": "Which option displays the raw timestamp?",
+    "answer": "-t"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_7",
+    "question": "How can Git blame walk through history from the start toward the end?",
+    "answer": "--reverse <start> .. <end>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_7",
+    "question": "Which option uses revisions from a specified file instead of calling git-rev-list?",
+    "answer": "-S <revs-file>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_61",
+    "question": "Which command compares the index with HEAD to show changes marked for committing?",
+    "answer": "git diff-index --cached HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_61",
+    "question": "Why might git diff-files show nothing after a file is renamed in the index?",
+    "answer": "the index file matches my working directory"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_61",
+    "question": "Which command can be used to create a tree from the index for comparison?",
+    "answer": "git write-tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_27",
+    "question": "Why is the resulting patch not meant to be applied with patch or git apply?",
+    "answer": "this is solely for people who want to just concentrate on reviewing the text after the change"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_27",
+    "question": "What is the time complexity of the exhaustive rename and copy detection check?",
+    "answer": "O(N^2)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_27",
+    "question": "Which option can prevent the exhaustive portion of rename and copy detection from running?",
+    "answer": "-l <num>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_switch_8",
+    "question": "Which option changes how conflicting hunks are presented?",
+    "answer": "--conflict= <style>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_switch_8",
+    "question": "Which conflict style is used by default?",
+    "answer": "merge"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_switch_8",
+    "question": "How can progress reporting be enabled even when output is not attached to a terminal?",
+    "answer": "--progress"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_12",
+    "question": "Which option treats all references in refs/ and HEAD as command-line revisions?",
+    "answer": "--all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_12",
+    "question": "Which option selects references from refs/heads?",
+    "answer": "--branches"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_12",
+    "question": "What pattern syntax can limit the branches selected by --branches?",
+    "answer": "shell glob"
+  }
+]

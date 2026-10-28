@@ -1,0 +1,1394 @@
+{
+  "config": {
+    "method": "bm25",
+    "model": "BAAI/bge-small-en-v1.5",
+    "reader": "deepset/roberta-base-squad2",
+    "ks": "5",
+    "split": "test",
+    "limit": null,
+    "min_score": 0.01,
+    "no_abstain": true,
+    "qa": null
+  },
+  "results": {
+    "oracle": {
+      "EM": 0.497,
+      "F1": 0.64,
+      "sans_reponse": 0.149,
+      "n": 195
+    },
+    "retrieved_top5": {
+      "EM": 0.426,
+      "F1": 0.549,
+      "sans_reponse": 0.133,
+      "n": 195
+    }
+  },
+  "predictions": [
+    {
+      "id": "qa_0009",
+      "question": "Which option is a shorthand for setting trunk, tags, and branches as relative paths?",
+      "gold": "--stdlayout",
+      "oracle": "--stdlayout",
+      "retrieved_top5": "--stdlayout"
+    },
+    {
+      "id": "qa_0010",
+      "question": "What configuration option is set by --no-metadata?",
+      "gold": "noMetadata",
+      "oracle": "svn-remote] config",
+      "retrieved_top5": "svn-remote] config"
+    },
+    {
+      "id": "qa_0011",
+      "question": "Which option sets the username for SVN transports handling authentication?",
+      "gold": "--username=<user>",
+      "oracle": "--username=<user>",
+      "retrieved_top5": "specify the username"
+    },
+    {
+      "id": "qa_0012",
+      "question": "What format provides terminator semantics instead of separator semantics?",
+      "gold": "tformat:",
+      "oracle": "tformat:",
+      "retrieved_top5": "tformat:"
+    },
+    {
+      "id": "qa_0013",
+      "question": "Which command uses tformat to display abbreviated commit hashes?",
+      "gold": "$ git log -2 --pretty=tformat:%h",
+      "oracle": "",
+      "retrieved_top5": "tree hash"
+    },
+    {
+      "id": "qa_0014",
+      "question": "What character is usually appended as the message terminator?",
+      "gold": "newline",
+      "oracle": "newline",
+      "retrieved_top5": "newline"
+    },
+    {
+      "id": "qa_0018",
+      "question": "Which option prevents Git from displaying notes?",
+      "gold": "--no-notes",
+      "oracle": "--no-notes",
+      "retrieved_top5": "--no-notes"
+    },
+    {
+      "id": "qa_0019",
+      "question": "What option shows the default notes unless specific notes are requested?",
+      "gold": "--show-notes-by-default",
+      "oracle": "--show-notes-by-default",
+      "retrieved_top5": "--show-notes-by-default"
+    },
+    {
+      "id": "qa_0020",
+      "question": "How does Git check the validity of a signed commit object?",
+      "gold": "passing the signature to gpg --verify",
+      "oracle": "by passing the signature to gpg --verify and show the output",
+      "retrieved_top5": "passing the signature to gpg --verify and show the output"
+    },
+    {
+      "id": "qa_0048",
+      "question": "Which option walks reflog entries instead of the commit ancestry chain?",
+      "gold": "--walk-reflogs",
+      "oracle": "walk reflog entries from the most recent one to older ones",
+      "retrieved_top5": "walk reflog entries from the most recent one to older ones"
+    },
+    {
+      "id": "qa_0049",
+      "question": "In which direction does Git walk reflog entries when --walk-reflogs is used?",
+      "gold": "from the most recent one to older ones",
+      "oracle": "from the most recent one to older ones",
+      "retrieved_top5": "from the most recent one to older ones"
+    },
+    {
+      "id": "qa_0050",
+      "question": "How can a reflog designator display the reverse-chronological index of an entry?",
+      "gold": "ref@{ <Nth> }",
+      "oracle": "ref@{ <Nth> }",
+      "retrieved_top5": "ref@{ <Nth> }"
+    },
+    {
+      "id": "qa_0054",
+      "question": "How can changes from commits be applied without creating new commits?",
+      "gold": "git cherry-pick -n master~1 next",
+      "oracle": "do not create any commit with these changes",
+      "retrieved_top5": "--no-ff option"
+    },
+    {
+      "id": "qa_0055",
+      "question": "Which command applies changes from the fifth and third last commits pointed to by master?",
+      "gold": "git cherry-pick master~4 master~2",
+      "oracle": "git cherry-pick",
+      "retrieved_top5": "git cherry-pick"
+    },
+    {
+      "id": "qa_0056",
+      "question": "When can git cherry-pick --ff advance HEAD to next?",
+      "gold": "If history is linear and HEAD is an ancestor of next",
+      "oracle": "If history is linear and HEAD is an ancestor of next, update the working tree",
+      "retrieved_top5": "If history is linear and HEAD is an ancestor of next, update the working tree"
+    },
+    {
+      "id": "qa_0057",
+      "question": "Which option allows cherry-picking commits that have empty messages?",
+      "gold": "--allow-empty-message",
+      "oracle": "--empty=(drop|keep|stop)",
+      "retrieved_top5": "--empty=(drop|keep|stop)"
+    },
+    {
+      "id": "qa_0058",
+      "question": "What is the default behavior when a cherry-picked commit becomes redundant with existing changes?",
+      "gold": "stop",
+      "oracle": "The cherry-pick will stop when the commit is applied, allowing you to examine the commit",
+      "retrieved_top5": "The cherry-pick will stop when the commit is applied, allowing you to examine the commit"
+    },
+    {
+      "id": "qa_0059",
+      "question": "Which option keeps a redundant cherry-picked commit?",
+      "gold": "--empty=keep",
+      "oracle": "drop",
+      "retrieved_top5": "drop"
+    },
+    {
+      "id": "qa_0060",
+      "question": "Which environment variable can override the diff.external configuration?",
+      "gold": "GIT_EXTERNAL_DIFF",
+      "oracle": "GIT_EXTERNAL_DIFF",
+      "retrieved_top5": "GIT_EXTERNAL_DIFF"
+    },
+    {
+      "id": "qa_0061",
+      "question": "What does diff.external specify when it is configured?",
+      "gold": "the given command",
+      "oracle": "number of lines",
+      "retrieved_top5": "number of lines"
+    },
+    {
+      "id": "qa_0062",
+      "question": "Which value represents the source mode when a file is created?",
+      "gold": "000000",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0063",
+      "question": "What separates the status from the source path in the diff output?",
+      "gold": "a tab or a NUL",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0064",
+      "question": "When does the source path exist in the diff output?",
+      "gold": "only exists for C or R",
+      "oracle": "",
+      "retrieved_top5": "both sides of the diff"
+    },
+    {
+      "id": "qa_0065",
+      "question": "Which tool is recommended when migrating from SVN to Git without preserving SVN history?",
+      "gold": "git-filter-repo",
+      "oracle": "git-filter-repo",
+      "retrieved_top5": "git-filter-repo"
+    },
+    {
+      "id": "qa_0066",
+      "question": "What SVN property indicates that a revision was likely created by SVN::Mirror?",
+      "gold": "svm:headrev",
+      "oracle": "svm:headrev",
+      "retrieved_top5": "svm:headrev"
+    },
+    {
+      "id": "qa_0067",
+      "question": "What information does the svm:headrev property contain?",
+      "gold": "a repository UUID and a revision",
+      "oracle": "a repository UUID and a revision",
+      "retrieved_top5": "a repository UUID and a revision"
+    },
+    {
+      "id": "qa_0068",
+      "question": "Which command generates three patches with base commit P and tip commit C?",
+      "gold": "git format-patch --base=P -3 C",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0069",
+      "question": "Where is the base tree information block shown in the first output message?",
+      "gold": "at the end of the first message",
+      "oracle": "at the end",
+      "retrieved_top5": "at the end"
+    },
+    {
+      "id": "qa_0073",
+      "question": "What object does the add subcommand use by default when adding notes?",
+      "gold": "HEAD",
+      "oracle": "HEAD",
+      "retrieved_top5": "HEAD"
+    },
+    {
+      "id": "qa_0074",
+      "question": "How can an existing note be overwritten when adding a new note?",
+      "gold": "-f",
+      "oracle": "use -f",
+      "retrieved_top5": "instead of aborting"
+    },
+    {
+      "id": "qa_0078",
+      "question": "Which command discards SVN revisions after revision 2 and also discards the specified revision?",
+      "gold": "git svn reset -r2 -p",
+      "oracle": "-p --parent",
+      "retrieved_top5": "-p --parent"
+    },
+    {
+      "id": "qa_0079",
+      "question": "What command should follow git svn reset to retrieve revisions again?",
+      "gold": "git svn fetch",
+      "oracle": "a fetch and then git reset or git rebase",
+      "retrieved_top5": "git rebase"
+    },
+    {
+      "id": "qa_0080",
+      "question": "Why should git merge not be used after resetting SVN history?",
+      "gold": "your history will not be compatible with a future dcommit",
+      "oracle": "your history will not be compatible with a future dcommit",
+      "retrieved_top5": "performance"
+    },
+    {
+      "id": "qa_0081",
+      "question": "What can happen if --prune-empty is not specified during filtering?",
+      "gold": "hoards of confusing empty commits",
+      "oracle": "hoards of confusing empty commits",
+      "retrieved_top5": "hoards of confusing empty commits"
+    },
+    {
+      "id": "qa_0082",
+      "question": "Which option prunes empty commits during the filtering process?",
+      "gold": "--prune-empty",
+      "oracle": "--prune-empty",
+      "retrieved_top5": "--prune-empty"
+    },
+    {
+      "id": "qa_0083",
+      "question": "Which dependency cache directory is mentioned as an example of incomplete cleanup?",
+      "gold": "node_modules",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0084",
+      "question": "Which tool is an alternative to git-filter-branch that avoids its performance problems?",
+      "gold": "git filter-repo",
+      "oracle": "git filter-repo",
+      "retrieved_top5": "git filter-repo"
+    },
+    {
+      "id": "qa_0085",
+      "question": "When would convenience functions need to be re-executed if git-filter-branch were not written in shell?",
+      "gold": "with every commit",
+      "oracle": "with every commit",
+      "retrieved_top5": "with every commit"
+    },
+    {
+      "id": "qa_0086",
+      "question": "What does the --break-rewrites option do to complete rewrite changes?",
+      "gold": "Break complete rewrite changes into pairs of delete and create.",
+      "oracle": "into pairs of delete and create",
+      "retrieved_top5": "pairs of delete and create"
+    },
+    {
+      "id": "qa_0109",
+      "question": "What exit code should an external diff command return when the files are equal if diff.trustExitCode is true?",
+      "gold": "0",
+      "oracle": "0",
+      "retrieved_top5": "0"
+    },
+    {
+      "id": "qa_0119",
+      "question": "How does Git automatically compute the base commit when --base=auto is specified?",
+      "gold": "as the merge base of tip commit of the remote-tracking branch and revision-range specified in cmdline",
+      "oracle": "cmdline",
+      "retrieved_top5": "cmdline"
+    },
+    {
+      "id": "qa_0123",
+      "question": "Which subcommand lists notes objects for a given object?",
+      "gold": "list",
+      "oracle": "SUBCOMMANDS",
+      "retrieved_top5": "SUBCOMMANDS"
+    },
+    {
+      "id": "qa_0142",
+      "question": "Why would rewriting git-filter-branch in another language help less than expected?",
+      "gold": "the convenience functions (map(), skip_commit(), etc) and the --setup argument could no longer be executed once at the beginning of the program",
+      "oracle": "ignore the bigger intrinsic problems with the design",
+      "retrieved_top5": "ignore the bigger intrinsic problems with the design"
+    },
+    {
+      "id": "qa_0146",
+      "question": "What percentage does -B/70% use as the threshold for the original content remaining?",
+      "gold": "less than 30%",
+      "oracle": "30%",
+      "retrieved_top5": "30%"
+    },
+    {
+      "id": "qa_0147",
+      "question": "Which option allows a totally rewritten file to be considered the source of a rename?",
+      "gold": "-M",
+      "oracle": "-M",
+      "retrieved_top5": "-M"
+    },
+    {
+      "id": "qa_0165",
+      "question": "Which option lists only commits on the respective side of a symmetric difference?",
+      "gold": "--left-only --right-only",
+      "oracle": "--left-only --right-only",
+      "retrieved_top5": "--left-only --right-only"
+    },
+    {
+      "id": "qa_0166",
+      "question": "What does --cherry-pick --right-only omit from branch B?",
+      "gold": "those commits from B which are in A or are patch-equivalent to a commit in A",
+      "oracle": "",
+      "retrieved_top5": "commits"
+    },
+    {
+      "id": "qa_0167",
+      "question": "Which command gives the exact list of commits when using cherry-pick and right-only filtering?",
+      "gold": "--cherry-pick --right-only --no-merges",
+      "oracle": "--cherry-pick --right-only --no-merges",
+      "retrieved_top5": "--cherry-pick --right-only --no-merges"
+    },
+    {
+      "id": "qa_0168",
+      "question": "Which command identifies the fork point between origin/master and topic?",
+      "gold": "git merge-base --fork-point origin/master topic",
+      "oracle": "git merge-base",
+      "retrieved_top5": "git merge-base"
+    },
+    {
+      "id": "qa_0169",
+      "question": "Why does the fork-point option consider old remote-tracking branch tips?",
+      "gold": "to see on which commit your topic branch was built",
+      "oracle": "to see on which commit your topic branch was built and finds B0",
+      "retrieved_top5": "must be the one your topic forked from its tip"
+    },
+    {
+      "id": "qa_0170",
+      "question": "Which historical information does the repository's reflog provide for finding the fork point?",
+      "gold": "old tips of the remote-tracking branches",
+      "oracle": "old tips of the remote-tracking branches",
+      "retrieved_top5": "a better common ancestor"
+    },
+    {
+      "id": "qa_0171",
+      "question": "What does the --pickaxe-regex option do to the string given to -S?",
+      "gold": "Treat the <string> given to -S as an extended POSIX regular expression to match.",
+      "oracle": "as an extended POSIX regular expression to match",
+      "retrieved_top5": "an extended POSIX regular"
+    },
+    {
+      "id": "qa_0172",
+      "question": "Which option controls the order in which files appear in the output?",
+      "gold": "-O <orderfile>",
+      "oracle": "-O <orderfile>",
+      "retrieved_top5": "-O <orderfile>"
+    },
+    {
+      "id": "qa_0173",
+      "question": "How can the diff.orderFile configuration variable be overridden?",
+      "gold": "-O <orderfile>",
+      "oracle": "-O <orderfile>",
+      "retrieved_top5": "-O <orderfile>"
+    },
+    {
+      "id": "qa_0183",
+      "question": "How can Git links be specified when importing submodules?",
+      "gold": "either by SHA or through a commit mark",
+      "oracle": "by SHA or through a commit mark",
+      "retrieved_top5": "by SHA or through a commit mark"
+    },
+    {
+      "id": "qa_0184",
+      "question": "What does the mode 040000 represent in a Git import?",
+      "gold": "A subdirectory.",
+      "oracle": "A subdirectory",
+      "retrieved_top5": "A subdirectory"
+    },
+    {
+      "id": "qa_0185",
+      "question": "When must a file path be quoted instead of represented as an unquoted string?",
+      "gold": "if the filename contains LF or starts with double quote",
+      "oracle": "if the filename contains LF or starts with double quote",
+      "retrieved_top5": "if the filename contains LF or starts with double quote"
+    },
+    {
+      "id": "qa_0189",
+      "question": "Which option suppresses patch output?",
+      "gold": "--no-patch",
+      "oracle": "--no-patch",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0190",
+      "question": "What does a numeric start or end value specify in a line range?",
+      "gold": "an absolute line number",
+      "oracle": "an absolute line number",
+      "retrieved_top5": "an absolute line number"
+    },
+    {
+      "id": "qa_0191",
+      "question": "Which regular expression syntax is used when a line range is specified as /<regex>/?",
+      "gold": "POSIX <regex>",
+      "oracle": "POSIX",
+      "retrieved_top5": "<funcname>"
+    },
+    {
+      "id": "qa_0195",
+      "question": "What data structure is used for the object table in fast-import?",
+      "gold": "a hashtable",
+      "oracle": "hashtable",
+      "retrieved_top5": "SHA-1"
+    },
+    {
+      "id": "qa_0196",
+      "question": "How are marks stored in fast-import?",
+      "gold": "in a sparse array",
+      "oracle": "a sparse array",
+      "retrieved_top5": "a sparse array"
+    },
+    {
+      "id": "qa_0197",
+      "question": "Which mark range are frontends strongly encouraged to use?",
+      "gold": "between 1 and n",
+      "oracle": "between 1 and n",
+      "retrieved_top5": "between 1 and n"
+    },
+    {
+      "id": "qa_0225",
+      "question": "What is the purpose of svn-remote.<name>.pushurl?",
+      "gold": "to provide an alternate read/write transport",
+      "oracle": "to provide an alternate read/write transport",
+      "retrieved_top5": "to provide an alternate read/write transport"
+    },
+    {
+      "id": "qa_0226",
+      "question": "Which setting takes precedence if either commiturl or pushurl could be used?",
+      "gold": "commiturl",
+      "oracle": "commiturl",
+      "retrieved_top5": "commiturl"
+    },
+    {
+      "id": "qa_0227",
+      "question": "When does a change to svn.brokenSymlinkWorkaround take effect while git svn is running?",
+      "gold": "on the next revision fetched",
+      "oracle": "on the next revision fetched",
+      "retrieved_top5": "on the next revision fetched"
+    },
+    {
+      "id": "qa_0249",
+      "question": "Which configuration variable specifies the encoding of commit messages?",
+      "gold": "i18n.commitEncoding",
+      "oracle": "",
+      "retrieved_top5": "core.editor"
+    },
+    {
+      "id": "qa_0250",
+      "question": "What encoding is implied when a commit object has no encoding header?",
+      "gold": "UTF-8",
+      "oracle": "UTF-8",
+      "retrieved_top5": "UTF-8"
+    },
+    {
+      "id": "qa_0251",
+      "question": "How can users specify the desired output encoding for Git log messages?",
+      "gold": "i18n.logOutputEncoding",
+      "oracle": "i18n.logOutputEncoding",
+      "retrieved_top5": "i18n.logOutputEncoding in .git/config file"
+    },
+    {
+      "id": "qa_0252",
+      "question": "Which command starts an automated bisect using a custom test script?",
+      "gold": "git bisect run ~/test.sh",
+      "oracle": "test.sh",
+      "retrieved_top5": "test.sh"
+    },
+    {
+      "id": "qa_0253",
+      "question": "What exit code should check_test_case.sh return when the test case passes?",
+      "gold": "exit 0",
+      "oracle": "0",
+      "retrieved_top5": "125"
+    },
+    {
+      "id": "qa_0254",
+      "question": "Why should the test scripts be located outside the repository?",
+      "gold": "to prevent interactions between the bisect, make and test processes and the scripts",
+      "oracle": "to prevent interactions between the bisect, make and test processes and the scripts",
+      "retrieved_top5": "to prevent interactions between the bisect, make and test processes and the scripts"
+    },
+    {
+      "id": "qa_0267",
+      "question": "Which field gives the size of a commit or tag message in bytes?",
+      "gold": "contents:size",
+      "oracle": "contents:size",
+      "retrieved_top5": "contents:size"
+    },
+    {
+      "id": "qa_0268",
+      "question": "What does contents:subject extract from a commit or tag message?",
+      "gold": "The first paragraph of the message",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0269",
+      "question": "Which field provides the remainder of a message after its subject?",
+      "gold": "contents:body",
+      "oracle": "contents:body",
+      "retrieved_top5": "contents:body"
+    },
+    {
+      "id": "qa_0279",
+      "question": "Which command skips the current commit during a bisect session?",
+      "gold": "git bisect skip",
+      "oracle": "$ git bisect skip v2.5 v2.5..v2.6",
+      "retrieved_top5": "git bisect reset"
+    },
+    {
+      "id": "qa_0280",
+      "question": "Which command skips all commits in the range from v2.5 through v2.6?",
+      "gold": "git bisect skip v2.5..v2.6",
+      "oracle": "$ git bisect",
+      "retrieved_top5": "$ git bisect"
+    },
+    {
+      "id": "qa_0281",
+      "question": "Why can skipping a commit adjacent to the target commit make the result uncertain?",
+      "gold": "Git will be unable to tell exactly which of those commits was the first bad one",
+      "oracle": "Git will be unable to tell exactly which of those commits was the first bad one",
+      "retrieved_top5": "performance"
+    },
+    {
+      "id": "qa_0282",
+      "question": "Which option outputs the selected commits in reverse order?",
+      "gold": "--reverse",
+      "oracle": "--reverse",
+      "retrieved_top5": "--reverse"
+    },
+    {
+      "id": "qa_0283",
+      "question": "How does --no-walk affect commit history traversal?",
+      "gold": "do not traverse their ancestors",
+      "oracle": "no",
+      "retrieved_top5": "no traversal is done by default"
+    },
+    {
+      "id": "qa_0284",
+      "question": "Which option cannot be combined with --reverse?",
+      "gold": "--walk-reflogs",
+      "oracle": "--walk-reflogs",
+      "retrieved_top5": "--pretty=oneline"
+    },
+    {
+      "id": "qa_0285",
+      "question": "Which option treats all files as text?",
+      "gold": "-a --text",
+      "oracle": "-a --text",
+      "retrieved_top5": "-p"
+    },
+    {
+      "id": "qa_0286",
+      "question": "What does --ignore-blank-lines ignore?",
+      "gold": "changes whose lines are all blank",
+      "oracle": "changes whose lines are all blank",
+      "retrieved_top5": "changes whose lines are all blank"
+    },
+    {
+      "id": "qa_0287",
+      "question": "Which option specifies a regular expression for ignoring matching lines?",
+      "gold": "-I <regex> --ignore-matching-lines= <regex>",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0288",
+      "question": "Which option limits the maximum depth to zero?",
+      "gold": "--max-depth=0",
+      "oracle": "--max-depth=0",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0289",
+      "question": "When is depth measured as if all top-level entries were specified?",
+      "gold": "If no pathspec is given",
+      "oracle": "If no pathspec is given",
+      "retrieved_top5": "If no pathspec is given"
+    },
+    {
+      "id": "qa_0290",
+      "question": "What types of comparisons support the --max-depth option?",
+      "gold": "diffs between tree objects",
+      "oracle": "diffs between tree objects",
+      "retrieved_top5": "diffs between tree objects"
+    },
+    {
+      "id": "qa_0294",
+      "question": "What is the default maximum number of simultaneously active branches?",
+      "gold": "5",
+      "oracle": "5",
+      "retrieved_top5": "5"
+    },
+    {
+      "id": "qa_0295",
+      "question": "What is the default maximum blob size for delta creation?",
+      "gold": "512m (512 MiB)",
+      "oracle": "512m",
+      "retrieved_top5": "50"
+    },
+    {
+      "id": "qa_0296",
+      "question": "Which option sets the maximum delta depth for blobs and trees?",
+      "gold": "--depth=<n>",
+      "oracle": "--depth=<n>",
+      "retrieved_top5": "--depth=<n>"
+    },
+    {
+      "id": "qa_0297",
+      "question": "What restriction applies to the delimiter string in delimited data?",
+      "gold": "must not appear on a line by itself within <raw>",
+      "oracle": "The string <delim> must not appear on a line by itself",
+      "retrieved_top5": "The string <delim> must not appear on a line by itself"
+    },
+    {
+      "id": "qa_0298",
+      "question": "When is the LF after the delimiter optional?",
+      "gold": "The LF after <delim> LF is optional",
+      "oracle": "it used to be required",
+      "retrieved_top5": "it used to be required"
+    },
+    {
+      "id": "qa_0299",
+      "question": "What does the checkpoint command force fast-import to do?",
+      "gold": "close the current packfile, start a new one",
+      "oracle": "close the current packfile, start a new one, and to save out all current branch refs, tags and marks",
+      "retrieved_top5": "close the current packfile, generate its unique SHA-1 checksum and index, and start a new packfile"
+    },
+    {
+      "id": "qa_0311",
+      "question": "What does git diff with a named commit show?",
+      "gold": "the changes you have in your working tree relative to the named <commit>",
+      "oracle": "",
+      "retrieved_top5": "the changes you staged for the next commit"
+    },
+    {
+      "id": "qa_0312",
+      "question": "Which option uses the merge base of a commit and HEAD for comparison?",
+      "gold": "--merge-base",
+      "oracle": "--merge-base",
+      "retrieved_top5": "--merge-base"
+    },
+    {
+      "id": "qa_0313",
+      "question": "What can be compared using the two-commit form of git diff?",
+      "gold": "two arbitrary <commit>",
+      "oracle": "",
+      "retrieved_top5": "two paths on the filesystem"
+    },
+    {
+      "id": "qa_0323",
+      "question": "What does the commit command record when creating or updating a branch?",
+      "gold": "one logical change to the project",
+      "oracle": "one logical change to the project",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0324",
+      "question": "Which prefix is typically used for branch names in Git?",
+      "gold": "refs/heads/",
+      "oracle": "refs/heads/",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0325",
+      "question": "What requirement must the value of <ref> satisfy?",
+      "gold": "a valid refname in Git",
+      "oracle": "a valid refname in Git",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0329",
+      "question": "Which option displays only the big picture of history topology by omitting commits not referenced by tags?",
+      "gold": "--simplify-by-decoration",
+      "oracle": "--simplify-by-decoration",
+      "retrieved_top5": "--simplify-by-decoration"
+    },
+    {
+      "id": "qa_0330",
+      "question": "Why does commit N remain in the history after simplification?",
+      "gold": "because it \"pulled\" the change R into the main branch",
+      "oracle": "it \"pulled\" the change R into the main branch",
+      "retrieved_top5": "it \"pulled\" the change R into the main branch"
+    },
+    {
+      "id": "qa_0331",
+      "question": "How are commits marked !TREESAME during history simplification?",
+      "gold": "they are referenced by tags",
+      "oracle": "if (1) they are referenced by tags",
+      "retrieved_top5": "if (1) they are referenced by tags"
+    },
+    {
+      "id": "qa_0335",
+      "question": "Which option adds a To: header to email headers?",
+      "gold": "--to= <email>",
+      "oracle": "--to= <email>",
+      "retrieved_top5": "--to= <email>"
+    },
+    {
+      "id": "qa_0336",
+      "question": "What does the --no-to option discard?",
+      "gold": "all To: headers added so far",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0337",
+      "question": "What is the default subject prefix for patch emails?",
+      "gold": "PATCH",
+      "oracle": "PATCH",
+      "retrieved_top5": "PATCH"
+    },
+    {
+      "id": "qa_0349",
+      "question": "Which option lets users edit the commit message before committing?",
+      "gold": "-e --edit",
+      "oracle": "git cherry-pick",
+      "retrieved_top5": "git cherry-pick"
+    },
+    {
+      "id": "qa_0350",
+      "question": "What does --cleanup=<mode> determine?",
+      "gold": "how the commit message will be cleaned up",
+      "oracle": "how the commit message will be cleaned up before being passed on to the commit machinery",
+      "retrieved_top5": "how the supplied commit message should be cleaned up before committing"
+    },
+    {
+      "id": "qa_0351",
+      "question": "When is the cherry-picked commit message appended with a source commit line?",
+      "gold": "only for cherry picks without conflicts",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0352",
+      "question": "Which option selects commits along an ancestry path?",
+      "gold": "--ancestry-path",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0353",
+      "question": "How can the ancestry path option explicitly specify commit D?",
+      "gold": "--ancestry-path=D",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0354",
+      "question": "Which option is mentioned as the next option to discuss after ancestry-path?",
+      "gold": "--show-pulls",
+      "oracle": "--show-pulls",
+      "retrieved_top5": "--show-pulls"
+    },
+    {
+      "id": "qa_0375",
+      "question": "What is the exit status when a remote cannot be found?",
+      "gold": "2",
+      "oracle": "2",
+      "retrieved_top5": "2"
+    },
+    {
+      "id": "qa_0376",
+      "question": "What exit status is returned when the remote already exists?",
+      "gold": "3",
+      "oracle": "3 .",
+      "retrieved_top5": "3 ."
+    },
+    {
+      "id": "qa_0377",
+      "question": "Which command adds the staging remote?",
+      "gold": "git remote add staging",
+      "oracle": "git remote",
+      "retrieved_top5": "git remote"
+    },
+    {
+      "id": "qa_0394",
+      "question": "Which options are used to demonstrate simplified history in the example?",
+      "gold": "--full-history and --simplify-merges",
+      "oracle": "--full-history and --simplify-merges",
+      "retrieved_top5": "--full-history and --simplify-merges"
+    },
+    {
+      "id": "qa_0395",
+      "question": "Which commits modify file.txt in different ways?",
+      "gold": "A , B , and X",
+      "oracle": "A , B , and X",
+      "retrieved_top5": "A , B , and X"
+    },
+    {
+      "id": "qa_0396",
+      "question": "Why was merge commit M not TREESAME to either parent?",
+      "gold": "resolving the merge conflict to include both changes from A and B",
+      "oracle": "resolving the merge conflict to include both changes from A and B",
+      "retrieved_top5": "resolving the merge conflict to include both changes from A and B"
+    },
+    {
+      "id": "qa_0400",
+      "question": "Which option skips the current commit and continues with the rest of the sequence?",
+      "gold": "--skip",
+      "oracle": "--skip",
+      "retrieved_top5": "--skip"
+    },
+    {
+      "id": "qa_0401",
+      "question": "What does --abort do during a cherry-pick or revert sequence?",
+      "gold": "Cancel the operation and return to the pre-sequence state.",
+      "oracle": "Cancel the operation and return to the pre-sequence state",
+      "retrieved_top5": "Cancel the operation and return to the pre-sequence state"
+    },
+    {
+      "id": "qa_0402",
+      "question": "Which command applies changes from ancestors of master but not HEAD?",
+      "gold": "git cherry-pick ..master",
+      "oracle": "git cherry-pick ..master git cherry-pick",
+      "retrieved_top5": "git cherry-pick ..master git cherry-pick"
+    },
+    {
+      "id": "qa_0424",
+      "question": "What is the default separator between ref names?",
+      "gold": "\" , \"",
+      "oracle": "",
+      "retrieved_top5": "<value>"
+    },
+    {
+      "id": "qa_0425",
+      "question": "What is shown between HEAD and the branch it points to?",
+      "gold": "pointer= <value>",
+      "oracle": "pointer= <value>",
+      "retrieved_top5": "pointer= <value>"
+    },
+    {
+      "id": "qa_0426",
+      "question": "What is the default number of hexadecimal digits for abbreviated objects?",
+      "gold": "7",
+      "oracle": "7",
+      "retrieved_top5": "7"
+    },
+    {
+      "id": "qa_0433",
+      "question": "What happens if separate author and committer commands are used?",
+      "gold": "the timestamps may not match",
+      "oracle": "the timestamps may not match",
+      "retrieved_top5": "the timestamps may not match"
+    },
+    {
+      "id": "qa_0434",
+      "question": "How can both author and committer identity information have the same timestamp?",
+      "gold": "omit author (thus copying from committer )",
+      "oracle": "to omit author",
+      "retrieved_top5": "to omit author"
+    },
+    {
+      "id": "qa_0435",
+      "question": "Which command creates a new branch or updates an existing branch by creating a new commit?",
+      "gold": "commit",
+      "oracle": "commit",
+      "retrieved_top5": "commit"
+    },
+    {
+      "id": "qa_0477",
+      "question": "Which command resets a dummy branch to the base commit for a tag?",
+      "gold": "reset",
+      "oracle": "reset command",
+      "retrieved_top5": "reset command"
+    },
+    {
+      "id": "qa_0478",
+      "question": "What is the example name for the tag fixup branch?",
+      "gold": "TAG_FIXUP",
+      "oracle": "TAG_FIXUP",
+      "retrieved_top5": "TAG_FIXUP"
+    },
+    {
+      "id": "qa_0479",
+      "question": "Why should merge be used when committing fixups?",
+      "gold": "allow tools such as git blame to track through the real commit history",
+      "oracle": "to connect the commit(s) which are supplying file revisions to the fixup branch",
+      "retrieved_top5": "to connect the commit(s) which are supplying file revisions to the fixup branch"
+    },
+    {
+      "id": "qa_0483",
+      "question": "How can reviewers see differences between the previous and current patch series in the cover letter?",
+      "gold": "insert an interdiff into the cover letter",
+      "oracle": "",
+      "retrieved_top5": "insert an interdiff"
+    },
+    {
+      "id": "qa_0484",
+      "question": "Which option inserts a range-diff to help reviewers compare patch series?",
+      "gold": "--range-diff=",
+      "oracle": "git-range-diff[1] ) into the cover letter",
+      "retrieved_top5": "git-range-diff[1] ) into the cover letter"
+    },
+    {
+      "id": "qa_0485",
+      "question": "What must the previous revision share with the series being formatted?",
+      "gold": "a common base",
+      "oracle": "",
+      "retrieved_top5": "common base"
+    },
+    {
+      "id": "qa_0486",
+      "question": "How can the number of graph lanes displayed by Git log be limited?",
+      "gold": "--graph-lane-limit=",
+      "oracle": "",
+      "retrieved_top5": "Lanes over the limit are replaced with a truncation mark ~"
+    },
+    {
+      "id": "qa_0487",
+      "question": "What symbol replaces graph lanes that exceed the specified limit?",
+      "gold": "~",
+      "oracle": "truncation mark ~ .",
+      "retrieved_top5": "truncation mark ~"
+    },
+    {
+      "id": "qa_0488",
+      "question": "How can users disable indentation of visual roots in a graph?",
+      "gold": "--no-graph-indent",
+      "oracle": "by default",
+      "retrieved_top5": "by default"
+    },
+    {
+      "id": "qa_0489",
+      "question": "Which option displays only the names of changed files in the post-image tree?",
+      "gold": "--name-only",
+      "oracle": "--name-only",
+      "retrieved_top5": "--name-only"
+    },
+    {
+      "id": "qa_0490",
+      "question": "How are pathnames with unusual characters quoted by default?",
+      "gold": "as explained for the configuration variable core.quotePath",
+      "oracle": "as explained",
+      "retrieved_top5": "as explained"
+    },
+    {
+      "id": "qa_0491",
+      "question": "What does the short submodule format display?",
+      "gold": "the names of the commits at the beginning and end of the range",
+      "oracle": "the names of the commits at the beginning and end of the range",
+      "retrieved_top5": "the names of the commits at the beginning and end of the range"
+    },
+    {
+      "id": "qa_0512",
+      "question": "When do most fast-import commands have a visible effect?",
+      "gold": "until the next checkpoint (or completion)",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0513",
+      "question": "How can a frontend and fast-import communicate bidirectionally?",
+      "gold": "connecting the frontend and fast-import via bidirectional pipes",
+      "oracle": "pipes",
+      "retrieved_top5": "pipes"
+    },
+    {
+      "id": "qa_0514",
+      "question": "Which commands can a frontend use to read information during an import?",
+      "gold": "progress , get-mark , ls , and cat-blob",
+      "oracle": "progress , get-mark , ls , and cat-blob",
+      "retrieved_top5": "progress , get-mark , ls , and cat-blob"
+    },
+    {
+      "id": "qa_0529",
+      "question": "Which option displays all best merge bases when multiple merge bases exist?",
+      "gold": "--all",
+      "oracle": "--all",
+      "retrieved_top5": "-a --all"
+    },
+    {
+      "id": "qa_0530",
+      "question": "How can Git directly check whether commit A is an ancestor of commit B?",
+      "gold": "git merge-base --is-ancestor A B",
+      "oracle": "if git merge-base --is-ancestor A B",
+      "retrieved_top5": "git merge-base --is-ancestor A B"
+    },
+    {
+      "id": "qa_0531",
+      "question": "What relationship does it indicate when the merge base of A and B equals A?",
+      "gold": "A is an ancestor of B",
+      "oracle": "A is an ancestor of B",
+      "retrieved_top5": "parent relationship"
+    },
+    {
+      "id": "qa_0538",
+      "question": "What exit status indicates that one or more provided paths are ignored?",
+      "gold": "0",
+      "oracle": "0",
+      "retrieved_top5": "0"
+    },
+    {
+      "id": "qa_0539",
+      "question": "Which exit status indicates that none of the provided paths are ignored?",
+      "gold": "1",
+      "oracle": "EXIT STATUS 0",
+      "retrieved_top5": "non-zero"
+    },
+    {
+      "id": "qa_0540",
+      "question": "Who is responsible for avoiding deadlocks caused by input or output buffers?",
+      "gold": "The caller",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0564",
+      "question": "What must the data command following tagger supply?",
+      "gold": "the annotated tag message",
+      "oracle": "the annotated tag message",
+      "retrieved_top5": "the annotated tag message"
+    },
+    {
+      "id": "qa_0565",
+      "question": "Which encoding must annotated tag messages currently use?",
+      "gold": "UTF-8",
+      "oracle": "UTF-8",
+      "retrieved_top5": "UTF-8"
+    },
+    {
+      "id": "qa_0566",
+      "question": "How can annotated tags be created when signing is required during import?",
+      "gold": "create lightweight tags from within fast-import with reset",
+      "oracle": "offline with the standard git tag process",
+      "retrieved_top5": "offline with the standard git tag process"
+    },
+    {
+      "id": "qa_0582",
+      "question": "How are file modes represented in extended headers?",
+      "gold": "6-digit octal numbers",
+      "oracle": "6-digit octal numbers",
+      "retrieved_top5": "6-digit octal numbers"
+    },
+    {
+      "id": "qa_0583",
+      "question": "What does the similarity index measure?",
+      "gold": "the percentage of unchanged lines",
+      "oracle": "percentage of unchanged lines",
+      "retrieved_top5": "percentage of unchanged lines"
+    },
+    {
+      "id": "qa_0584",
+      "question": "Which filenames are shown as file1 and file2 when a rename or copy occurs?",
+      "gold": "the name of the source file",
+      "oracle": "the name of the source file of the rename/copy and the name of the file that the rename/copy produces",
+      "retrieved_top5": "a/ or b/"
+    },
+    {
+      "id": "qa_0585",
+      "question": "What happens if evaluating a filter command returns a non-zero exit status?",
+      "gold": "the whole operation will be aborted",
+      "oracle": "the whole operation will be aborted",
+      "retrieved_top5": "the whole operation will be aborted"
+    },
+    {
+      "id": "qa_0586",
+      "question": "Which option runs a one-time setup before the commit-processing loop?",
+      "gold": "--setup <command>",
+      "oracle": "--setup <command>",
+      "retrieved_top5": "--setup <command>"
+    },
+    {
+      "id": "qa_0587",
+      "question": "What does the map function output if a commit has already been rewritten?",
+      "gold": "a \"rewritten sha1 id\"",
+      "oracle": "a \"rewritten sha1 id",
+      "retrieved_top5": "a \"rewritten sha1 id"
+    },
+    {
+      "id": "qa_0591",
+      "question": "Why are textconv filters not enabled by default for git-format-patch?",
+      "gold": "the resulting diff is suitable for human consumption, but cannot be applied",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0592",
+      "question": "Which setting is the default for ignoring submodule changes during diff generation?",
+      "gold": "all",
+      "oracle": "all",
+      "retrieved_top5": "all"
+    },
+    {
+      "id": "qa_0593",
+      "question": "What does the untracked setting do when checking submodules?",
+      "gold": "submodules are not considered dirty when they only contain untracked content",
+      "oracle": "not considered dirty",
+      "retrieved_top5": "ignored"
+    },
+    {
+      "id": "qa_0600",
+      "question": "Which command automatically bisects a test failure between origin and HEAD?",
+      "gold": "git bisect run make test",
+      "oracle": "git bisect",
+      "retrieved_top5": "$ git bisect"
+    },
+    {
+      "id": "qa_0601",
+      "question": "What command ends a Git bisect session?",
+      "gold": "git bisect reset",
+      "oracle": "git bisect reset",
+      "retrieved_top5": "bisect/bad"
+    },
+    {
+      "id": "qa_0602",
+      "question": "How does the custom test script skip broken builds?",
+      "gold": "make || exit 125",
+      "oracle": "",
+      "retrieved_top5": "if make fails"
+    },
+    {
+      "id": "qa_0606",
+      "question": "Which command shows only modification, rename, and copy changes?",
+      "gold": "git diff --diff-filter=MRC",
+      "oracle": "git diff",
+      "retrieved_top5": "git diff"
+    },
+    {
+      "id": "qa_0607",
+      "question": "How can Git diff output be displayed in reverse?",
+      "gold": "git diff -R",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0608",
+      "question": "Which option spends extra cycles to find renames, copies, and complete rewrites?",
+      "gold": "--find-copies-harder -B -C",
+      "oracle": "git diff",
+      "retrieved_top5": "git diff"
+    },
+    {
+      "id": "qa_0630",
+      "question": "Which option supplies a commit message directly on the command line?",
+      "gold": "-m <msg>",
+      "oracle": "-m or -F",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0631",
+      "question": "How can a commit message be taken from a file?",
+      "gold": "-F <filename>",
+      "oracle": "-F <filename> --file=<filename>",
+      "retrieved_top5": "by the title taken from the \"Subject: \", a blank line and the body of the message up to where the patch begins"
+    },
+    {
+      "id": "qa_0632",
+      "question": "Which command provides information about a file or directory similar to svn info?",
+      "gold": "info",
+      "oracle": "info",
+      "retrieved_top5": "info"
+    },
+    {
+      "id": "qa_0635",
+      "question": "What is the default reference used to read and manipulate Git notes?",
+      "gold": "refs/notes/commits",
+      "oracle": "refs/notes/commits .",
+      "retrieved_top5": "refs/notes/commits"
+    },
+    {
+      "id": "qa_0636",
+      "question": "Which merge strategy is selected by default when resolving notes conflicts?",
+      "gold": "manual",
+      "oracle": "notes.mergeStrategy",
+      "retrieved_top5": "manual"
+    },
+    {
+      "id": "qa_0637",
+      "question": "Which command-line option overrides the default notes merge strategy?",
+      "gold": "--strategy",
+      "oracle": "--strategy",
+      "retrieved_top5": "--strategy"
+    },
+    {
+      "id": "qa_0647",
+      "question": "Which atom specifies the text printed when a conditional expression evaluates as true?",
+      "gold": "% ( then )",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0648",
+      "question": "How can a conditional expression compare a value with a specified string?",
+      "gold": ":equals= <string>",
+      "oracle": "Append \" :equals= <string> \" or \" :notequals= <string> \"",
+      "retrieved_top5": "Append \" :equals= <string> \" or \" :notequals= <string> \""
+    },
+    {
+      "id": "qa_0649",
+      "question": "Which atom can be used to print either an asterisk or a space for HEAD?",
+      "gold": "% ( HEAD )",
+      "oracle": "%",
+      "retrieved_top5": "%"
+    },
+    {
+      "id": "qa_0653",
+      "question": "Which command removes the original references backed up by git-filter-branch?",
+      "gold": "git update-ref -d",
+      "oracle": "",
+      "retrieved_top5": "git for-each-ref"
+    },
+    {
+      "id": "qa_0654",
+      "question": "How can all reflogs be expired immediately?",
+      "gold": "git reflog expire --expire=now --all",
+      "oracle": "--expire=now --all .",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0655",
+      "question": "Why is git-filter-branch described as glacially slow?",
+      "gold": "its design makes it impossible for a backward-compatible implementation to ever be fast",
+      "oracle": "its design makes it impossible for a backward-compatible implementation to ever be fast:",
+      "retrieved_top5": "its design makes it impossible for a backward-compatible implementation to ever be fast:"
+    },
+    {
+      "id": "qa_0679",
+      "question": "What does the push atom display for a reference?",
+      "gold": "The name of a local ref which represents the @{push} location",
+      "oracle": "ref",
+      "retrieved_top5": "\"refs/for/master\""
+    },
+    {
+      "id": "qa_0680",
+      "question": "What does the push atom produce when no push reference is configured?",
+      "gold": "an empty string",
+      "oracle": "an empty string",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0681",
+      "question": "Which atom changes the output color?",
+      "gold": "color",
+      "oracle": "HEAD",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0682",
+      "question": "Why might someone use git check-ignore when debugging ignored paths?",
+      "gold": "to debug why a path became tracked",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0683",
+      "question": "How is output displayed by default when a pathname matches an ignore pattern?",
+      "gold": "one per line",
+      "oracle": "one per line",
+      "retrieved_top5": "one per line"
+    },
+    {
+      "id": "qa_0684",
+      "question": "Which information does the verbose output provide about an ignore pattern?",
+      "gold": "<source> <COLON> <linenum> <COLON> <pattern> <HT> <pathname>",
+      "oracle": "",
+      "retrieved_top5": ""
+    },
+    {
+      "id": "qa_0690",
+      "question": "What does /dev/null indicate in a traditional unified diff header?",
+      "gold": "created or deleted files",
+      "oracle": "created or deleted files",
+      "retrieved_top5": "created or deleted files"
+    },
+    {
+      "id": "qa_0691",
+      "question": "Which option produces an extended from-file/to-file header in combined diff output?",
+      "gold": "--combined-all-paths",
+      "oracle": "--combined-all-paths",
+      "retrieved_top5": "--combined-all-paths"
+    },
+    {
+      "id": "qa_0692",
+      "question": "Why was the combined diff format created?",
+      "gold": "for review of merge commit changes",
+      "oracle": "for review of merge commit changes",
+      "retrieved_top5": "for review of merge commit changes"
+    },
+    {
+      "id": "qa_0699",
+      "question": "Which command is preferred for synchronizing unintegrated commits with a git svn branch?",
+      "gold": "git svn rebase",
+      "oracle": "git svn rebase",
+      "retrieved_top5": "git svn rebase"
+    },
+    {
+      "id": "qa_0700",
+      "question": "Why should git svn rebase be preferred over git pull or git merge?",
+      "gold": "keep the history of unintegrated commits linear",
+      "oracle": "to synchronize unintegrated commits with a git svn branch",
+      "retrieved_top5": "to synchronize unintegrated commits with a git svn branch"
+    },
+    {
+      "id": "qa_0701",
+      "question": "What subcommand is preferred for pushing unintegrated commits back into SVN?",
+      "gold": "git svn dcommit",
+      "oracle": "git svn dcommit",
+      "retrieved_top5": "git svn dcommit"
+    },
+    {
+      "id": "qa_0707",
+      "question": "Which diff algorithm is currently the default?",
+      "gold": "myers",
+      "oracle": "greedy",
+      "retrieved_top5": "myers"
+    },
+    {
+      "id": "qa_0708",
+      "question": "What does the minimal algorithm do?",
+      "gold": "Spend extra time to make sure the smallest possible diff is produced.",
+      "oracle": "Spend extra time to make sure the smallest possible diff is produced",
+      "retrieved_top5": "Spend extra time to make sure the smallest possible diff is produced"
+    },
+    {
+      "id": "qa_0709",
+      "question": "Which option generates a diffstat?",
+      "gold": "--stat",
+      "oracle": "--stat",
+      "retrieved_top5": "rebase.stat"
+    },
+    {
+      "id": "qa_0710",
+      "question": "When is the --rmdir option used?",
+      "gold": "Only used with the dcommit , set-tree and commit-diff commands.",
+      "oracle": "Only used with the dcommit , set-tree and commit-diff commands",
+      "retrieved_top5": "Only used with the dcommit , set-tree and commit-diff commands"
+    },
+    {
+      "id": "qa_0711",
+      "question": "What does the --rmdir option remove from the SVN tree?",
+      "gold": "directories",
+      "oracle": "directories",
+      "retrieved_top5": "directories"
+    },
+    {
+      "id": "qa_0712",
+      "question": "Which config key corresponds to the --edit option?",
+      "gold": "svn.edit",
+      "oracle": "svn.rmdir",
+      "retrieved_top5": "svn.rmdir"
+    }
+  ]
+}

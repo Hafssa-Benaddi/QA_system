@@ -1,0 +1,38 @@
+You are building an extractive question answering dataset from technical documentation.
+
+Below are 8 passages, each with an ID. For EACH passage, write 3 different questions
+that can be answered using ONLY that passage.
+
+Rules:
+- Each question must be understandable on its own (never say "in this passage").
+- The answer must be an EXACT, short substring copied character-for-character from the passage
+  (a command, a value, a name, a short phrase; max 15 words).
+- Vary the question types (how, what, which, when, why).
+
+Return ONLY one JSON list, with no other text, in this format:
+[{"passage_id": "...", "question": "...", "answer": "..."}]
+
+PASSAGE ID: git_scm_com_docs_git_fetch_29
+"""user simply must know this is the expected usage pattern for a branch. --stdin Read refspecs, one per line, from stdin in addition to those provided as arguments. The "tag <name> " format is not supported. GIT URLS In general, URLs contain information about the transport protocol, the address of the remote server, and the path to the repository. Depending on the transport protocol, some of this information may be absent. Git supports ssh, git, http, and https protocols (in addition, ftp and ftps can be used for fetching, but this is inefficient and deprecated; do not use them). The native transport (i.e. git:// URL) does no authentication and should be used with caution on unsecured networks. The following syntaxes may be used with them: ssh:// [ <user> @ ] <host> [ : <port> ] / <path-to-git-repo> git:// <host> [ : <port> ] / <path-to-git-repo> http [ s ] ://"""
+
+PASSAGE ID: git_scm_com_docs_git_branch_22
+"""of the branch to create or delete. The new branch name must pass all checks defined by git-check-ref-format[1] . Some of these checks may restrict the characters allowed in a branch name. <start-point> The new branch head will point to this commit. It may be given as a branch name, a commit-id, or a tag. If this option is omitted, the current HEAD will be used instead. <old-branch> The name of an existing branch. If this option is omitted, the name of the current branch will be used instead. <new-branch> The new name for an existing branch. The same restrictions as for <branch-name> apply. CONFIGURATION pager.branch is only respected when listing branches, i.e., when --list is used or implied. The default is to use a pager. See git-config[1] . Everything above this line in this section isn’t included from the git-config[1] documentation. The content that follows is the same as"""
+
+PASSAGE ID: git_scm_com_docs_git_notes_24
+"""cat_sort_uniq , or ignore . This overrides the core.rewriteMode setting. GIT_NOTES_REWRITE_REF When rewriting commits, which notes to copy from the original to the rewritten commit. Must be a colon-delimited list of refs or globs. If not set in the environment, the list of notes to copy depends on the notes.rewrite. <command> and notes.rewriteRef settings. GIT Part of the git[1] suite 1 . Permitted pathnames have the form bf / fe / 30 / …​ / 680d5a…​ : a sequence of directory names of two hexadecimal digits each followed by a filename with the rest of the object ID. notes"""
+
+PASSAGE ID: git_scm_com_docs_git_blame_22
+"""recent commit that is more than 3 weeks old in the above example) are blamed for that range boundary commit. A particularly useful way is to see if an added file has lines created by copy-and-paste from existing files. Sometimes this indicates that the developer was being sloppy and did not refactor the code properly. You can first find the commit that introduced the file with: git log --diff-filter=A --pretty=short -- foo and then annotate the change between the commit and its parents, using commit^! notation: git blame -C -C -f $commit^! -- foo INCREMENTAL OUTPUT When called with --incremental option, the command outputs the result as it is built. The output generally will talk about lines touched by more recent commits first (i.e. the lines will be annotated out of order) and is meant to be used by interactive viewers. The output format is similar to the Porcelain format,"""
+
+PASSAGE ID: git_scm_com_docs_git_log_132
+"""this (when the -c option is used): diff --combined file or like this (when the --cc option is used): diff --cc file It is followed by one or more extended header lines (this example shows a merge with two parents): index <hash> , <hash> .. <hash> mode <mode> , <mode> .. <mode> new file mode <mode> deleted file mode <mode> , <mode> The mode <mode> , <mode> .. <mode> line appears only if at least one of the <mode> is different from the rest. Extended headers with information about detected content movement (renames and copying detection) are designed to work with the diff of two <tree-ish> and are not used by combined diff format. It is followed by a two-line from-file/to-file header: --- a/file +++ b/file Similar to the two-line header for the traditional unified diff format, /dev/null is used to signal created or deleted files. However, if the --combined-all-paths"""
+
+PASSAGE ID: git_scm_com_docs_git_filter_branch_25
+"""depend upon topology of commits instead of filtering solely based on file contents or names (though this has not been observed in the wild). Even if you don’t need to edit files but only want to e.g. rename or remove some and thus can avoid checking out each file (i.e. you can use --index-filter), you still are passing shell snippets for your filters. This means that for every commit, you have to have a prepared git repo where those filters can be run. That’s a significant setup. Further, several additional files are created or updated per commit by git-filter-branch. Some of these are for supporting the convenience functions provided by git-filter-branch (such as map()), while others are for keeping track of internal state (but could have also been accessed by user filters; one of git-filter-branch’s regression tests does so). This essentially amounts to using the filesystem as an IPC mechanism"""
+
+PASSAGE ID: git_scm_com_docs_git_difftool_10
+"""be provided explicitly for the diff.guitool to be used. SEE ALSO git-diff[1] Show changes between commits, commit and working tree, etc git-mergetool[1] Run merge conflict resolution tools to resolve merge conflicts git-config[1] Get and set repository or global options GIT Part of the git[1] suite difftool"""
+
+PASSAGE ID: git_scm_com_docs_git_pull_33
+"""is not an empty string, an attempt is made to update the local ref that matches it. Whether that update is allowed without --force depends on the ref namespace it’s being fetched to, the type of object being fetched, and whether the update is considered to be a fast-forward. Generally, the same rules apply for fetching as when pushing, see the <refspec> ... section of git-push[1] for what those are. Exceptions to those rules particular to git fetch are noted below. Until Git version 2.20, and unlike when pushing with git-push[1] , any updates to refs/tags/* would be accepted without + in the refspec (or --force ). When fetching, we promiscuously considered all tag updates from a remote to be forced fetches. Since Git version 2.20, fetching to update refs/tags/* works the same way as when pushing. I.e. any updates will be rejected without + in the refspec (or --force"""
+

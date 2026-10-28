@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_add_3",
+    "question": "What does the git add command add to the index?",
+    "answer": "contents of new or changed files"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_3",
+    "question": "What is another name for the index in Git?",
+    "answer": "staging area"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_3",
+    "question": "How can you stage only part of your changes to a file?",
+    "answer": "git add -p"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_daemon_12",
+    "question": "When is a requested directory served if directories are specified for git-daemon?",
+    "answer": "only if it is contained in one of these directories"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_daemon_12",
+    "question": "What does the --strict-paths option require of a requested directory?",
+    "answer": "must match one of these directories exactly"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_daemon_12",
+    "question": "Which Git clients are served by the upload-pack service?",
+    "answer": "git fetch-pack and git ls-remote clients"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_56",
+    "question": "Which command can continue an interactive rebase after a failed command has been fixed?",
+    "answer": "git rebase --continue"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_56",
+    "question": "Where is a command launched by the exec instruction run from?",
+    "answer": "the root of the working tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_56",
+    "question": "Why can the exec command be used during an interactive rebase?",
+    "answer": "check that intermediate commits are compilable"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_26",
+    "question": "Which option lists only commits on the respective side of a symmetric difference?",
+    "answer": "--left-only --right-only"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_26",
+    "question": "What does --cherry-pick --right-only omit from branch B?",
+    "answer": "those commits from B which are in A or are patch-equivalent to a commit in A"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_26",
+    "question": "Which command gives the exact list of commits when using cherry-pick and right-only filtering?",
+    "answer": "--cherry-pick --right-only --no-merges"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_base_9",
+    "question": "Which command identifies the fork point between origin/master and topic?",
+    "answer": "git merge-base --fork-point origin/master topic"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_base_9",
+    "question": "Why does the fork-point option consider old remote-tracking branch tips?",
+    "answer": "to see on which commit your topic branch was built"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_base_9",
+    "question": "Which historical information does the repository's reflog provide for finding the fork point?",
+    "answer": "old tips of the remote-tracking branches"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_118",
+    "question": "What does the --pickaxe-regex option do to the string given to -S?",
+    "answer": "Treat the <string> given to -S as an extended POSIX regular expression to match."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_118",
+    "question": "Which option controls the order in which files appear in the output?",
+    "answer": "-O <orderfile>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_118",
+    "question": "How can the diff.orderFile configuration variable be overridden?",
+    "answer": "-O <orderfile>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_278",
+    "question": "Which maintenance task is enabled by default?",
+    "answer": "maintenance.gc.enabled"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_278",
+    "question": "What values are allowed for the maintenance task schedule frequency?",
+    "answer": "\"hourly\", \"daily\", or \"weekly\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_278",
+    "question": "What happens to the commit-graph task when maintenance.commit-graph.auto is zero?",
+    "answer": "the commit-graph task will not run with the --auto option"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_shortlog_30",
+    "question": "How are root commits evaluated when determining whether they are TREESAME?",
+    "answer": "compared to an empty tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_shortlog_30",
+    "question": "Which option makes parent-child relations visible in Git history output?",
+    "answer": "--parents"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_shortlog_30",
+    "question": "How does --full-history without parent rewriting differ from the default mode?",
+    "answer": "always follow all parents of a merge"
+  }
+]

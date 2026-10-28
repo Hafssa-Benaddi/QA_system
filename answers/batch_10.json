@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_commit_15",
+    "question": "Which option adds a specified token and value pair to a commit message as a trailer?",
+    "answer": "--trailer"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_15",
+    "question": "What does the --no-verify option bypass during a commit?",
+    "answer": "the pre-commit and commit-msg hooks"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_15",
+    "question": "Which option allows Git to record a commit with the same tree as its sole parent?",
+    "answer": "--allow-empty"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_stash_16",
+    "question": "Which stash option saves only changes that are currently staged?",
+    "answer": "--staged"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_stash_16",
+    "question": "How can pathspec elements be supplied to the git stash push command from a file?",
+    "answer": "--pathspec-from-file= <file>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_stash_16",
+    "question": "What character separates pathspec elements when --pathspec-file-nul is used?",
+    "answer": "NUL character"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_4",
+    "question": "Why are bundles created using revision exclusions smaller in size?",
+    "answer": "By using \"thin packs\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_4",
+    "question": "Which git bundle subcommand checks whether a bundle is valid and applies cleanly?",
+    "answer": "verify <file>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_4",
+    "question": "Where is a bundle written when the file argument is a hyphen?",
+    "answer": "stdout"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_48",
+    "question": "Which option produces patch text when running Git diff-related commands?",
+    "answer": "-p"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_48",
+    "question": "Which environment variable can customize the creation of patch text?",
+    "answer": "GIT_EXTERNAL_DIFF"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_48",
+    "question": "What header precedes the patch text produced by the -p option?",
+    "answer": "diff --git a/file1 b/file2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cat_file_5",
+    "question": "Which option displays content transformed by a textconv filter?",
+    "answer": "Show the content as transformed by a textconv filter."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cat_file_5",
+    "question": "Which option shows content converted by filters configured in the current working tree?",
+    "answer": "--filters"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_cat_file_5",
+    "question": "When can the --filter option be used to omit objects from the printed list?",
+    "answer": "in combination with one of the batched modes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_228",
+    "question": "Which environment variable contains the name of the currently selected file for a Git GUI tool?",
+    "answer": "FILENAME"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_228",
+    "question": "What does guitool.<name>.needsFile require before running a tool?",
+    "answer": "a diff is selected in the GUI"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_228",
+    "question": "Which configuration option displays a confirmation dialog before running a tool?",
+    "answer": "guitool.<name>.confirm"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_15",
+    "question": "Which stage represents the merged result tree?",
+    "answer": "stage 0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_15",
+    "question": "Why does git write-tree complain about unmerged entries?",
+    "answer": "if it sees a single entry that is not stage 0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_15",
+    "question": "Which stages represent the two trees being merged?",
+    "answer": "stage 2 and 3"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_141",
+    "question": "Which configuration variable specifies the encoding of commit messages?",
+    "answer": "i18n.commitEncoding"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_141",
+    "question": "What encoding is implied when a commit object has no encoding header?",
+    "answer": "UTF-8"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_141",
+    "question": "How can users specify the desired output encoding for Git log messages?",
+    "answer": "i18n.logOutputEncoding"
+  }
+]

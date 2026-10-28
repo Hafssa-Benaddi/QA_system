@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_merge_base_7",
+    "question": "Which option displays all best merge bases when multiple merge bases exist?",
+    "answer": "--all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_base_7",
+    "question": "How can Git directly check whether commit A is an ancestor of commit B?",
+    "answer": "git merge-base --is-ancestor A B"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_base_7",
+    "question": "What relationship does it indicate when the merge base of A and B equals A?",
+    "answer": "A is an ancestor of B"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_10",
+    "question": "Which option updates index entries to match the working tree, including removed files?",
+    "answer": "-A"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_10",
+    "question": "What does the --no-all option do with files removed from the working tree?",
+    "answer": "ignore files that have been removed from the working tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_10",
+    "question": "When is the --no-all option a no-op?",
+    "answer": "when no <pathspec> is used"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_18",
+    "question": "How can a commit be amended without changing its commit message?",
+    "answer": "--amend --no-edit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_18",
+    "question": "What does the --amend option replace?",
+    "answer": "the tip of the current branch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_18",
+    "question": "Which option can countermand the preservation of the current author's identity when amending a commit?",
+    "answer": "--reset-author"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_6",
+    "question": "What exit status indicates that one or more provided paths are ignored?",
+    "answer": "0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_6",
+    "question": "Which exit status indicates that none of the provided paths are ignored?",
+    "answer": "1"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_check_ignore_6",
+    "question": "Who is responsible for avoiding deadlocks caused by input or output buffers?",
+    "answer": "The caller"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_361",
+    "question": "What happens when remote.<name>.prune is set to true?",
+    "answer": "remove any remote-tracking references that no longer exist on the remote"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_361",
+    "question": "When can fetching remove local tags that no longer exist on the remote?",
+    "answer": "if pruning is activated in general"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_361",
+    "question": "Which configuration variable specifies that a remote will fetch promisor objects?",
+    "answer": "remote.<name>.promisor"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_51",
+    "question": "Which option prevents object ID names from being printed when using --objects?",
+    "answer": "--no-object-names"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_51",
+    "question": "What does --filter=blob:none omit from the list of printed objects?",
+    "answer": "all blobs"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_51",
+    "question": "Why is --no-object-names useful for commands such as git-cat-file?",
+    "answer": "allows the output to be more easily parsed"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_62",
+    "question": "What question does git diff-index --cached help answer?",
+    "answer": "what have I already marked for being committed"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_62",
+    "question": "Which two states are compared by the non-cached version of git diff-index?",
+    "answer": "HEAD and the currently checked out tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_62",
+    "question": "Why is the non-cached mode useful?",
+    "answer": "that tells you what you could commit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_am_10",
+    "question": "What does the --skip option do when applying patches?",
+    "answer": "Skip the current patch."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_am_10",
+    "question": "When is the --skip option meaningful?",
+    "answer": "when restarting an aborted patch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_am_10",
+    "question": "What does the --gpg-sign option do?",
+    "answer": "GPG-sign commits."
+  }
+]

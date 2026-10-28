@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_worktree_24",
+    "question": "How can a linked worktree be prevented from being pruned?",
+    "answer": "git worktree lock"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_worktree_24",
+    "question": "What file contains the reason for locking a worktree?",
+    "answer": "locked"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_worktree_24",
+    "question": "Which annotation indicates that a worktree can be pruned?",
+    "answer": "prunable"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_247",
+    "question": "Which environment variable can override the http.sslversion configuration?",
+    "answer": "GIT_SSL_VERSION"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_247",
+    "question": "What environment variable overrides the http.sslCipherList configuration?",
+    "answer": "GIT_SSL_CIPHER_LIST"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_247",
+    "question": "Which configuration option determines whether to verify the SSL certificate when fetching?",
+    "answer": "http.sslVerify"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_170",
+    "question": "What configuration variable controls which diff tool is used by git-difftool?",
+    "answer": "diff.tool"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_170",
+    "question": "Which variable controls the diff tool when the GUI flag is specified?",
+    "answer": "diff.guitool"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_170",
+    "question": "What does diff.colorMovedWS control?",
+    "answer": "the mode how spaces are treated"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reflog_1",
+    "question": "What command manages reflog information?",
+    "answer": "git-reflog"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reflog_1",
+    "question": "How can you check whether a reflog exists for a reference?",
+    "answer": "git reflog exists <ref>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reflog_1",
+    "question": "Which command writes a reflog entry with old and new object IDs?",
+    "answer": "git reflog write <ref> <old-oid> <new-oid> <message>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_73",
+    "question": "Which format shows the entire commit exactly as stored in the commit object?",
+    "answer": "raw"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_73",
+    "question": "How are hashes displayed in the raw format?",
+    "answer": "in full"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_73",
+    "question": "What information does the raw format show about parent commits?",
+    "answer": "the true parent commits"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_20",
+    "question": "What is the depth of submodules when --shallow-submodules is used?",
+    "answer": "1"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_20",
+    "question": "Which option makes cloned submodules use their remote-tracking branch status?",
+    "answer": "--remote-submodules"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_clone_20",
+    "question": "How can a cloned repository be placed in a specified directory?",
+    "answer": "--separate-git-dir= <git-dir>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_129",
+    "question": "Where is a ref's reflog logged?",
+    "answer": "$GIT_DIR/logs/ <ref>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_129",
+    "question": "What value automatically creates missing reflogs for any ref under refs/?",
+    "answer": "always"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_129",
+    "question": "What is the default value for this configuration in a bare repository?",
+    "answer": "false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_checkout_18",
+    "question": "How can edits be selectively discarded from the current working tree?",
+    "answer": "git checkout -p"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_checkout_18",
+    "question": "What option generates diffs with a specified number of context lines?",
+    "answer": "-U <n> --unified= <n>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_checkout_18",
+    "question": "What is the default number of context lines when diff.context is unset?",
+    "answer": "3"
+  }
+]

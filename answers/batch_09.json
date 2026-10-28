@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_push_57",
+    "question": "What configuration option assumes --set-upstream on a default push when no upstream tracking exists?",
+    "answer": "push.autoSetupRemote"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_57",
+    "question": "Which push.default values support the push.autoSetupRemote option?",
+    "answer": "simple , upstream , and current"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_57",
+    "question": "Why is push.autoSetupRemote useful when creating new branches?",
+    "answer": "new branches to be pushed to the default remote"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_4",
+    "question": "What does the command git rev-list foo bar ^baz list?",
+    "answer": "all the commits which are reachable from foo or bar , but not from baz"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_4",
+    "question": "Which notation is a shorthand for ^<commit1> <commit2>?",
+    "answer": "<commit1> .. <commit2>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_4",
+    "question": "How can you list commits reachable from HEAD but not from origin?",
+    "answer": "git rev-list origin..HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_64",
+    "question": "What Git command is equivalent to git last when the alias is configured as shown?",
+    "answer": "git cat-file commit HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_64",
+    "question": "Why are aliases that hide existing Git commands ignored?",
+    "answer": "To avoid confusion and troubles with script usage"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_64",
+    "question": "How can arguments in a Git alias be quoted?",
+    "answer": "A quote pair or a backslash"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_tag_0",
+    "question": "Which Git topic includes the tag command?",
+    "answer": "Branching and Merging"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_tag_0",
+    "question": "Which command is listed under Plumbing Commands for inspecting object contents?",
+    "answer": "cat-file"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_tag_0",
+    "question": "Where is the archive command listed in the Git documentation topics?",
+    "answer": "Administration"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_archive_10",
+    "question": "Which option uses the checked-out .gitattributes file when generating an archive?",
+    "answer": "--worktree-attributes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_archive_10",
+    "question": "How can you create a compressed tarball for the v1.4.0 release?",
+    "answer": "git archive --format=tar --prefix=git-1.4.0/ v1.4.0 | gzip >git-1.4.0.tar.gz"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_archive_10",
+    "question": "Where can necessary attributes for archiving any tree be stored?",
+    "answer": "$GIT_DIR/info/attributes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_count_objects_1",
+    "question": "What does git count-objects measure?",
+    "answer": "the number of unpacked object files and disk space consumed by them"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_count_objects_1",
+    "question": "Which option provides more detailed reports from git count-objects?",
+    "answer": "--verbose"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_count_objects_1",
+    "question": "What does the size-pack field report?",
+    "answer": "disk space consumed"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_216",
+    "question": "What happens when gitcvs.allBinary is true?",
+    "answer": "all unresolved files are sent to the client in mode -kb"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_216",
+    "question": "What is the default database driver for gitcvs.dbName?",
+    "answer": "SQLite"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_216",
+    "question": "What is the default value of gitcvs.dbName?",
+    "answer": "%Ggitcvs.%m.sqlite"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_37",
+    "question": "What is the purpose of svn-remote.<name>.pushurl?",
+    "answer": "to provide an alternate read/write transport"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_37",
+    "question": "Which setting takes precedence if either commiturl or pushurl could be used?",
+    "answer": "commiturl"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_37",
+    "question": "When does a change to svn.brokenSymlinkWorkaround take effect while git svn is running?",
+    "answer": "on the next revision fetched"
+  }
+]

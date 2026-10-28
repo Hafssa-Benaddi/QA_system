@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_config_434",
+    "question": "Which configuration option specifies a web browser for certain Git commands?",
+    "answer": "web.browser"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_434",
+    "question": "Which Git commands may use the configured web browser?",
+    "answer": "git-instaweb[1] and git-help[1]"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_434",
+    "question": "How is a tag sorted when multiple matching suffixes start at the same earliest position?",
+    "answer": "the longest of those suffixes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_tag_15",
+    "question": "Which option replaces an existing Git tag?",
+    "answer": "-f"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_tag_15",
+    "question": "What is the recommended approach when a published tag needs correction?",
+    "answer": "use a different name"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_tag_15",
+    "question": "What example name is suggested for a corrected version of tag X?",
+    "answer": "X.1"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_23",
+    "question": "Which option supplies a commit message directly on the command line?",
+    "answer": "-m <msg>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_23",
+    "question": "How can a commit message be taken from a file?",
+    "answer": "-F <filename>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_23",
+    "question": "Which command provides information about a file or directory similar to svn info?",
+    "answer": "info"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_0",
+    "question": "Which plumbing command appears in the navigation list for inspecting repository trees?",
+    "answer": "read-tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_0",
+    "question": "Which command is listed under Setup and Config for configuring Git?",
+    "answer": "git config"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_0",
+    "question": "Which command is listed under Debugging for finding the source of a regression?",
+    "answer": "bisect"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_19",
+    "question": "What is the default reference used to read and manipulate Git notes?",
+    "answer": "refs/notes/commits"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_19",
+    "question": "Which merge strategy is selected by default when resolving notes conflicts?",
+    "answer": "manual"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_19",
+    "question": "Which command-line option overrides the default notes merge strategy?",
+    "answer": "--strategy"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_167",
+    "question": "Which option makes a diff driver treat files as binary?",
+    "answer": "diff. <driver> .binary"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_167",
+    "question": "What does the diff driver's textconv command generate?",
+    "answer": "the text-converted version of a file"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_167",
+    "question": "Which setting specifies the regular expression used to recognize hunk headers?",
+    "answer": "diff. <driver> .xfuncname"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_10",
+    "question": "Which option adds a Signed-off-by trailer to the commit log message?",
+    "answer": "--signoff"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_10",
+    "question": "Where is the Signed-off-by trailer added to the commit log message?",
+    "answer": "at the end of the commit log message"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_merge_10",
+    "question": "Which option counteracts an earlier --signoff option on the command line?",
+    "answer": "--no-signoff"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_112",
+    "question": "Which fsmonitor hook protocol version is tried first when no version is configured?",
+    "answer": "version 2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_112",
+    "question": "What happens when protocol version 2 fails?",
+    "answer": "version 1 will be tried"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_112",
+    "question": "Why is it best to upgrade Git versions before using the built-in file system monitor?",
+    "answer": "status commands may report incomplete results"
+  }
+]

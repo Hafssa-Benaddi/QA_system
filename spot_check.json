@@ -1,0 +1,126 @@
+{
+  "sample_size": 20,
+  "errors": 0,
+  "results": [
+    {
+      "id": "qa_0456",
+      "question": "Which command appears under the Plumbing Commands list for examining Git objects?",
+      "answer": "cat-file",
+      "correct": true
+    },
+    {
+      "id": "qa_0443",
+      "question": "When does format.numbered automatically enable sequence numbers?",
+      "answer": "if there is more than one patch",
+      "correct": true
+    },
+    {
+      "id": "qa_0532",
+      "question": "Which option updates index entries to match the working tree, including removed files?",
+      "answer": "-A",
+      "correct": true
+    },
+    {
+      "id": "qa_0615",
+      "question": "Which command restores specified paths in the working tree?",
+      "answer": "git restore",
+      "correct": true
+    },
+    {
+      "id": "qa_0065",
+      "question": "Which tool is recommended when migrating from SVN to Git without preserving SVN history?",
+      "answer": "git-filter-repo",
+      "correct": true
+    },
+    {
+      "id": "qa_0467",
+      "question": "When is uploadpack.packObjectsHook respected?",
+      "answer": "when it is specified in protected configuration",
+      "correct": true
+    },
+    {
+      "id": "qa_0563",
+      "question": "What is the purpose of using reset --keep after switching to branch2?",
+      "answer": "remove the unwanted commit",
+      "correct": true
+    },
+    {
+      "id": "qa_0452",
+      "question": "Which command adds only part of the changes to a file?",
+      "answer": "git add -p",
+      "correct": true
+    },
+    {
+      "id": "qa_0079",
+      "question": "What command should follow git svn reset to retrieve revisions again?",
+      "answer": "git svn fetch",
+      "correct": true
+    },
+    {
+      "id": "qa_0574",
+      "question": "What encoding configuration is used if i18n.logOutputEncoding is absent?",
+      "answer": "i18n.commitEncoding",
+      "correct": true
+    },
+    {
+      "id": "qa_0591",
+      "question": "Why are textconv filters not enabled by default for git-format-patch?",
+      "answer": "the resulting diff is suitable for human consumption, but cannot be applied",
+      "correct": true
+    },
+    {
+      "id": "qa_0627",
+      "question": "Which option replaces an existing Git tag?",
+      "answer": "-f",
+      "correct": true
+    },
+    {
+      "id": "qa_0500",
+      "question": "What does index.recordEndOfIndexEntries specify?",
+      "answer": "whether the index file should include an \"End Of Index Entry\" section",
+      "correct": true
+    },
+    {
+      "id": "qa_0656",
+      "question": "Which option displays the raw timestamp?",
+      "answer": "-t",
+      "correct": true
+    },
+    {
+      "id": "qa_0347",
+      "question": "Why is the resulting patch not meant to be applied with patch or git apply?",
+      "answer": "this is solely for people who want to just concentrate on reviewing the text after the change",
+      "correct": true
+    },
+    {
+      "id": "qa_0245",
+      "question": "Which configuration option displays a confirmation dialog before running a tool?",
+      "answer": "guitool.<name>.confirm",
+      "correct": true
+    },
+    {
+      "id": "qa_0420",
+      "question": "Which placeholder represents the author date as a UNIX timestamp?",
+      "answer": "%at",
+      "correct": true
+    },
+    {
+      "id": "qa_0702",
+      "question": "What does rebase do when a conflict occurs?",
+      "answer": "rebase stops and asks the user to resolve",
+      "correct": true
+    },
+    {
+      "id": "qa_0295",
+      "question": "What is the default maximum blob size for delta creation?",
+      "answer": "512m (512 MiB)",
+      "correct": true
+    },
+    {
+      "id": "qa_0106",
+      "question": "Which email client is specifically known to be problematic when sending patches?",
+      "answer": "Thunderbird",
+      "correct": true
+    }
+  ]
+}

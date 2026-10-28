@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_notes_5",
+    "question": "Which subcommand lists notes objects for a given object?",
+    "answer": "list"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_5",
+    "question": "What object does the add subcommand use by default when adding notes?",
+    "answer": "HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_5",
+    "question": "How can an existing note be overwritten when adding a new note?",
+    "answer": "-f"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_1",
+    "question": "What is the name of the Git command documented on this page?",
+    "answer": "git-notes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_1",
+    "question": "What is the latest listed Git notes version?",
+    "answer": "2.56.0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_notes_1",
+    "question": "When was version 2.50.0 listed as released?",
+    "answer": "2025-06-16"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_26",
+    "question": "Which command discards SVN revisions after revision 2 and also discards the specified revision?",
+    "answer": "git svn reset -r2 -p"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_26",
+    "question": "What command should follow git svn reset to retrieve revisions again?",
+    "answer": "git svn fetch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_26",
+    "question": "Why should git merge not be used after resetting SVN history?",
+    "answer": "your history will not be compatible with a future dcommit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_0",
+    "question": "Which command is listed under Basic Snapshotting for adding changes?",
+    "answer": "add"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_0",
+    "question": "Which Git topic includes commands such as branch, checkout, and merge?",
+    "answer": "Branching and Merging"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_0",
+    "question": "Which command is listed under Plumbing Commands for updating references?",
+    "answer": "update-ref"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_351",
+    "question": "What is the default behavior when a push is rejected because the working tree or index differs from HEAD under updateInstead?",
+    "answer": "refuse the push"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_351",
+    "question": "Which hook can customize the behavior of pushes using updateInstead?",
+    "answer": "push-to-checkout hook"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_351",
+    "question": "What does receive.denyNonFastForwards prevent when it is set to true?",
+    "answer": "a ref update which is not a fast-forward"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_9",
+    "question": "Which command creates a bundle containing both the master and next branches?",
+    "answer": "git bundle create master-and-next.bundle master next"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_9",
+    "question": "What error appears when Git refuses to create an empty bundle?",
+    "answer": "fatal: Refusing to create empty bundle."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_9",
+    "question": "What is the section describing prerequisites for creating bundles called?",
+    "answer": "OBJECT PREREQUISITES"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_35",
+    "question": "What can happen if --prune-empty is not specified during filtering?",
+    "answer": "hoards of confusing empty commits"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_35",
+    "question": "Which option prunes empty commits during the filtering process?",
+    "answer": "--prune-empty"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_35",
+    "question": "Which dependency cache directory is mentioned as an example of incomplete cleanup?",
+    "answer": "node_modules"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_156",
+    "question": "What is the default retry timeout for locking the credentials file?",
+    "answer": "1000"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_156",
+    "question": "What does a credentialStore.lockTimeoutMS value of 0 mean?",
+    "answer": "not to retry at all"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_156",
+    "question": "Which configuration setting specifies the default username for network authentication?",
+    "answer": "credential.username"
+  }
+]

@@ -1,0 +1,123 @@
+
+[
+  {
+    "passage_id": "git_scm_com_docs_git_diff_52",
+    "question": "Which value represents the source mode when a file is created?",
+    "answer": "000000"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_52",
+    "question": "What separates the status from the source path in the diff output?",
+    "answer": "a tab or a NUL"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_52",
+    "question": "When does the source path exist in the diff output?",
+    "answer": "only exists for C or R"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_35",
+    "question": "Which tool is recommended when migrating from SVN to Git without preserving SVN history?",
+    "answer": "git-filter-repo"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_35",
+    "question": "What SVN property indicates that a revision was likely created by SVN::Mirror?",
+    "answer": "svm:headrev"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_35",
+    "question": "What information does the svm:headrev property contain?",
+    "answer": "a repository UUID and a revision"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_10",
+    "question": "Which transfer encoding fails when it encounters a non-ASCII message?",
+    "answer": "7bit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_10",
+    "question": "What is the default transfer encoding when no configuration value is specified?",
+    "answer": "auto"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_send_email_10",
+    "question": "How can the X-Mailer header be prevented from being added?",
+    "answer": "--no-xmailer"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_14",
+    "question": "Which command creates a new repository by cloning a bundle into R2?",
+    "answer": "git clone -b master /home/me/tmp/file.bundle R2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_14",
+    "question": "What remote is defined in the repository created by cloning the bundle?",
+    "answer": "origin"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bundle_14",
+    "question": "How can an incremental bundle be created to update another repository?",
+    "answer": "git bundle create file.bundle lastR2bundle..master"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_66",
+    "question": "How does --date=unix represent a commit's date?",
+    "answer": "a Unix epoch timestamp (seconds since 1970)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_66",
+    "question": "Which strftime placeholders are handled internally by Git's date formatting?",
+    "answer": "%s , %z , and %Z"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_66",
+    "question": "What is the default date format based on?",
+    "answer": "ctime(3) output"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_62",
+    "question": "Which command generates three patches with base commit P and tip commit C?",
+    "answer": "git format-patch --base=P -3 C"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_62",
+    "question": "Where is the base tree information block shown in the first output message?",
+    "answer": "at the end of the first message"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_62",
+    "question": "How does Git automatically compute the base commit when --base=auto is specified?",
+    "answer": "as the merge base of tip commit of the remote-tracking branch and revision-range specified in cmdline"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_365",
+    "question": "Which configuration setting determines how differences between remote HEAD and local HEAD are handled during fetching?",
+    "answer": "remote.<name>.followRemoteHEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_365",
+    "question": "What command-line option uses the negotiation include configuration values as defaults?",
+    "answer": "--negotiation-include"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_365",
+    "question": "What do blank negotiation include values indicate?",
+    "answer": "to ignore all previous values"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_16",
+    "question": "Which option suppresses the author name and timestamp from git blame output?",
+    "answer": "-s"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_16",
+    "question": "How can git blame ignore whitespace when identifying where lines originated?",
+    "answer": "-w"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_16",
+    "question": "Which diff algorithm spends extra time to produce the smallest possible diff?",
+    "answer": "minimal"
+  }
+]

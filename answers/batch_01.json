@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_36",
+    "question": "Which option ignores changes whose lines are all blank?",
+    "answer": "--ignore-blank-lines"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_36",
+    "question": "How can Git show the whole function as context lines for each change?",
+    "answer": "-W --function-context"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_36",
+    "question": "What option disables all output of the program?",
+    "answer": "--quiet"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_188",
+    "question": "What configuration setting specifies the maximal number of fetch operations run in parallel?",
+    "answer": "fetch.parallel"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_188",
+    "question": "What is the default value of fetch.parallel when it is unset?",
+    "answer": "1"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_188",
+    "question": "Which setting can override the fetch parallelism for submodules?",
+    "answer": "submodule.fetchJobs"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fetch_5",
+    "question": "Where are the names of fetched refs and their object names written?",
+    "answer": ".git/FETCH_HEAD"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fetch_5",
+    "question": "How can you append fetched ref names to the existing FETCH_HEAD contents?",
+    "answer": "-a --append"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fetch_5",
+    "question": "What does the --atomic option do when updating local refs?",
+    "answer": "Use an atomic transaction to update local refs."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_4",
+    "question": "Which option is a shorthand for setting trunk, tags, and branches as relative paths?",
+    "answer": "--stdlayout"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_4",
+    "question": "What configuration option is set by --no-metadata?",
+    "answer": "noMetadata"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_svn_4",
+    "question": "Which option sets the username for SVN transports handling authentication?",
+    "answer": "--username=<user>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_84",
+    "question": "What format provides terminator semantics instead of separator semantics?",
+    "answer": "tformat:"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_84",
+    "question": "Which command uses tformat to display abbreviated commit hashes?",
+    "answer": "$ git log -2 --pretty=tformat:%h"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_84",
+    "question": "What character is usually appended as the message terminator?",
+    "answer": "newline"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_31",
+    "question": "How can you automatically create a temporary stash before rebasing?",
+    "answer": "--autostash"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_31",
+    "question": "Why can the final stash application after a successful rebase require care?",
+    "answer": "the final stash application after a successful rebase might result in non-trivial conflicts."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_31",
+    "question": "Which option automatically reschedules exec commands that failed?",
+    "answer": "--reschedule-failed-exec"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_57",
+    "question": "Which option prevents Git from displaying notes?",
+    "answer": "--no-notes"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_57",
+    "question": "What option shows the default notes unless specific notes are requested?",
+    "answer": "--show-notes-by-default"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_log_57",
+    "question": "How does Git check the validity of a signed commit object?",
+    "answer": "passing the signature to gpg --verify"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_369",
+    "question": "What is the minimum value required for repack.midxSplitFactor?",
+    "answer": "2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_369",
+    "question": "What is the default value of repack.midxSplitFactor?",
+    "answer": "2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_369",
+    "question": "What is the default threshold for the number of packs in the tip MIDX layer?",
+    "answer": "8"
+  }
+]

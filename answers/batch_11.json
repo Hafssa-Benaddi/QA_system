@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_22",
+    "question": "Which command starts an automated bisect using a custom test script?",
+    "answer": "git bisect run ~/test.sh"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_22",
+    "question": "What exit code should check_test_case.sh return when the test case passes?",
+    "answer": "exit 0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_bisect_22",
+    "question": "Why should the test scripts be located outside the repository?",
+    "answer": "to prevent interactions between the bisect, make and test processes and the scripts"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_stash_25",
+    "question": "What is the default value of stash.showIncludeUntracked?",
+    "answer": "false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_stash_25",
+    "question": "Which command displays a stash entry in patch form when no option is supplied?",
+    "answer": "git stash show"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_stash_25",
+    "question": "What exit status do stash subcommands return on success?",
+    "answer": "0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_25",
+    "question": "Which format string displays trailers from a commit message body?",
+    "answer": "% ( trailers [ : <option> ,... ] )"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_25",
+    "question": "How is matching for a specified trailer key performed?",
+    "answer": "case-insensitively"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_25",
+    "question": "What setting disables the automatic hiding of non-trailer lines?",
+    "answer": "only=false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_39",
+    "question": "What happens to the overall exit code if any member push fails?",
+    "answer": "non-zero"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_39",
+    "question": "How is the status of a push displayed in tabular form?",
+    "answer": "<flag> <summary> <from> -> <to> (<reason>)"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_push_39",
+    "question": "Which option changes each output line to the porcelain format?",
+    "answer": "--porcelain"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_76",
+    "question": "Which format option forces colors to appear even when color is not enabled?",
+    "answer": "%C ( always, <spec> )"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_76",
+    "question": "What does the placeholder %m use to mark left, right, or boundary positions?",
+    "answer": "left ( < ), right ( > ) or boundary ( - )"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_76",
+    "question": "What does the %<( <n> placeholder control?",
+    "answer": "make the next placeholder take at least N column widths"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_22",
+    "question": "Which field gives the size of a commit or tag message in bytes?",
+    "answer": "contents:size"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_22",
+    "question": "What does contents:subject extract from a commit or tag message?",
+    "answer": "The first paragraph of the message"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_for_each_ref_22",
+    "question": "Which field provides the remainder of a message after its subject?",
+    "answer": "contents:body"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_branch_9",
+    "question": "Which option deletes a branch only when it is fully merged?",
+    "answer": "-d --delete"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_branch_9",
+    "question": "What is the shortcut for deleting a branch forcibly?",
+    "answer": "-D"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_branch_9",
+    "question": "What does the --create-reflog option enable?",
+    "answer": "recording of all changes made to the branch ref"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_15",
+    "question": "Which option includes debugging information about lines moved between or within files?",
+    "answer": "--score-debug"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_15",
+    "question": "What does the first number listed by --score-debug represent?",
+    "answer": "the score"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_blame_15",
+    "question": "Which option displays the author's email instead of the author's name?",
+    "answer": "--show-email"
+  }
+]

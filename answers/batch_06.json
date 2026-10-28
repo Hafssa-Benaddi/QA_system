@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_21",
+    "question": "What special value indicates that a submodule branch should match the current repository branch?",
+    "answer": "."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_21",
+    "question": "Which option forces a Git submodule command to proceed even if it would otherwise fail?",
+    "answer": "--force"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_21",
+    "question": "How does Git generate a unique submodule name when a proposed name is already registered?",
+    "answer": "by appending a number to the conflicting name"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_59",
+    "question": "What separates the number of added lines from the number of deleted lines in the formatted output?",
+    "answer": "a tab"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_59",
+    "question": "Which flag lets users trust the index file entirely?",
+    "answer": "--cached"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_diff_index_59",
+    "question": "Why is an extra NUL included before the preimage path in a renamed record?",
+    "answer": "to allow scripts that read the output to tell if the current record being read is a single-path record or a rename/copy record"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_27",
+    "question": "Which tool is an alternative to git-filter-branch that avoids its performance problems?",
+    "answer": "git filter-repo"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_27",
+    "question": "Why would rewriting git-filter-branch in another language help less than expected?",
+    "answer": "the convenience functions (map(), skip_commit(), etc) and the --setup argument could no longer be executed once at the beginning of the program"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_filter_branch_27",
+    "question": "When would convenience functions need to be re-executed if git-filter-branch were not written in shell?",
+    "answer": "with every commit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_13",
+    "question": "Which command performs a three-tree read-tree operation?",
+    "answer": "git read-tree -m <tree1> <tree2> <tree3>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_13",
+    "question": "What is the normal stage state for an index entry?",
+    "answer": "stage 0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_read_tree_13",
+    "question": "How are entries from the third tree represented after a three-tree read-tree operation?",
+    "answer": "in \"stage3\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_18",
+    "question": "What does the --break-rewrites option do to complete rewrite changes?",
+    "answer": "Break complete rewrite changes into pairs of delete and create."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_18",
+    "question": "What percentage does -B/70% use as the threshold for the original content remaining?",
+    "answer": "less than 30%"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_format_patch_18",
+    "question": "Which option allows a totally rewritten file to be considered the source of a rename?",
+    "answer": "-M"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_44",
+    "question": "What does the --no-color option do?",
+    "answer": "Turn off colored diff."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_44",
+    "question": "Which values can be used for the --color option's when parameter?",
+    "answer": "always , never , or auto"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_44",
+    "question": "What is the default mode for --color-moved when no mode is specified?",
+    "answer": "no"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_398",
+    "question": "What is the default value of submodule.recurse?",
+    "answer": "false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_398",
+    "question": "How can submodule recursion be temporarily disabled for commands without a --no-recurse-submodules option?",
+    "answer": "git -c submodule.recurse=0"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_398",
+    "question": "Which commands do not support the submodule.recurse setting?",
+    "answer": "clone and ls-files"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_28",
+    "question": "What value does commit D set foo to?",
+    "answer": "baz"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_28",
+    "question": "Which commit changes foo to foobar through its merge?",
+    "answer": "N"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rev_list_28",
+    "question": "What does independent root commit X add?",
+    "answer": "a new file side"
+  }
+]

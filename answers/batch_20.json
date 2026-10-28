@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_config_234",
+    "question": "Can named hooks run in parallel with other hooks for the same event by default?",
+    "answer": "false"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_234",
+    "question": "When do all hooks for an event run sequentially?",
+    "answer": "If any hook for an event does not have this set to true"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_234",
+    "question": "What does hook.<event>.enabled control?",
+    "answer": "enable or disable all hooks for the <event> hook event"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_193",
+    "question": "What is the default value of format.numbered?",
+    "answer": "\"auto\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_193",
+    "question": "When does format.numbered automatically enable sequence numbers?",
+    "answer": "if there is more than one patch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_193",
+    "question": "Which variable specifies additional email headers for a patch?",
+    "answer": "format.headers"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_22",
+    "question": "Which option uses reflog to find a better common ancestor?",
+    "answer": "--fork-point"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_22",
+    "question": "Which command calculates the fork point between upstream and branch?",
+    "answer": "git merge-base --fork-point <upstream> <branch>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_rebase_22",
+    "question": "What is used as a fallback if fork_point is empty?",
+    "answer": "<upstream>"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_29",
+    "question": "How does tformat differ from format?",
+    "answer": "it provides \"terminator\" semantics instead of \"separator\" semantics"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_29",
+    "question": "What character is usually appended as the message terminator?",
+    "answer": "a newline"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_show_29",
+    "question": "What is equivalent to git log -2 --pretty=tformat:%h 4da45bef?",
+    "answer": "$ git log -2 --pretty=%h 4da45bef"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_7",
+    "question": "Which option discards existing deltas and recomputes them?",
+    "answer": "--no-reuse-delta"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_7",
+    "question": "Why does aggressive repacking take more time?",
+    "answer": "re-compute them, at the expense of spending much more time on the repacking"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_gc_7",
+    "question": "Which settings control the depth and window options passed to git-repack?",
+    "answer": "gc.aggressiveDepth and gc.aggressiveWindow"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_4",
+    "question": "Which command adds only part of the changes to a file?",
+    "answer": "git add -p"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_4",
+    "question": "How can ignored files be added with git add?",
+    "answer": "--force"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_4",
+    "question": "Which command summarizes files staged for the next commit?",
+    "answer": "git status"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_335",
+    "question": "What does pull.twohead specify?",
+    "answer": "The default merge strategy to use when pulling a single branch."
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_335",
+    "question": "When does push.autoSetupRemote assume --set-upstream?",
+    "answer": "when no upstream tracking exists for the current branch"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_335",
+    "question": "Which push.default values support push.autoSetupRemote?",
+    "answer": "simple , upstream , and current"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_1",
+    "question": "Which command appears under the Plumbing Commands list for examining Git objects?",
+    "answer": "cat-file"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_1",
+    "question": "Which command is listed for reading a tree into the index?",
+    "answer": "read-tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_init_1",
+    "question": "What is the latest version listed for git-init?",
+    "answer": "2.56.0"
+  }
+]

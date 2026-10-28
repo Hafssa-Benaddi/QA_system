@@ -1,0 +1,122 @@
+[
+  {
+    "passage_id": "git_scm_com_docs_git_config_346",
+    "question": "Which configuration variable controls whether git-receive-pack advertises atomic push capability?",
+    "answer": "receive.advertiseAtomic"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_346",
+    "question": "How can the push options capability be advertised to clients?",
+    "answer": "When set to true"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_346",
+    "question": "What command does git-receive-pack run automatically after receiving data and updating refs?",
+    "answer": "git maintenance run --auto"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_225",
+    "question": "What is the default width of the commit message window in git-gui?",
+    "answer": "75"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_225",
+    "question": "How many context lines are used by default in git-gui diff calls?",
+    "answer": "5"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_config_225",
+    "question": "What encoding do the tools use if gui.encoding is not set?",
+    "answer": "the locale encoding"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_5",
+    "question": "Which remote is assumed when no remote-tracking branch exists or HEAD is detached?",
+    "answer": "origin"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_5",
+    "question": "What determines the location of a cloned submodule when the optional path is omitted?",
+    "answer": "the canonical part of the source repository"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_submodule_5",
+    "question": "How should a sibling repository foo.git be referenced relative to bar.git?",
+    "answer": "../foo.git"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reset_18",
+    "question": "Which command creates a new branch named branch2 in the example?",
+    "answer": "git switch -c branch2"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reset_18",
+    "question": "How can an unwanted commit be removed after switching to branch2 while keeping working tree changes?",
+    "answer": "git reset --keep start"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_reset_18",
+    "question": "What is the purpose of using reset --keep after switching to branch2?",
+    "answer": "remove the unwanted commit"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_52",
+    "question": "What must the data command following tagger supply?",
+    "answer": "the annotated tag message"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_52",
+    "question": "Which encoding must annotated tag messages currently use?",
+    "answer": "UTF-8"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fast_import_52",
+    "question": "How can annotated tags be created when signing is required during import?",
+    "answer": "create lightweight tags from within fast-import with reset"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_24",
+    "question": "How can context lines be staged for removal when editing a patch?",
+    "answer": "converting the space to a \"-\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_24",
+    "question": "How can new content that does not exist in the patch be added?",
+    "answer": "add new lines, each starting with \"+\""
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_add_24",
+    "question": "What happens to a modification in the working tree after staging it through patch editing?",
+    "answer": "the new modification will appear reverted in the working tree"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fetch_36",
+    "question": "Where can a file containing a repository URL be provided for fetching?",
+    "answer": "$GIT_DIR/branches"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fetch_36",
+    "question": "What is the default value of <head> when it is omitted from the branch file?",
+    "answer": "master"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_fetch_36",
+    "question": "Which command normally uses the upstream branch by default when run without arguments?",
+    "answer": "git pull"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_tree_10",
+    "question": "Which configuration variable specifies the desired output encoding for log messages?",
+    "answer": "i18n.logOutputEncoding"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_tree_10",
+    "question": "What encoding configuration is used if i18n.logOutputEncoding is absent?",
+    "answer": "i18n.commitEncoding"
+  },
+  {
+    "passage_id": "git_scm_com_docs_git_commit_tree_10",
+    "question": "Why is the commit log message not re-coded to UTF-8 when a commit is made?",
+    "answer": "re-coding to UTF-8 is not necessarily a reversible operation"
+  }
+]
