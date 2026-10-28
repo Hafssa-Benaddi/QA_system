@@ -15,4 +15,4 @@ streamlit run app.py
 - eval_retrieval.py, eval_end2end.py: evaluation
 
   ## Presentation
-[View the presentation (PDF)](My%20Presentation.pdf)
+[View the presentation (PDF)](presentation.pdf)
